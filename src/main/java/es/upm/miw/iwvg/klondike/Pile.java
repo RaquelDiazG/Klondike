@@ -1,47 +1,32 @@
 package es.upm.miw.iwvg.klondike;
 
+import java.util.ArrayList;
+
 public class Pile {
+
     private int position;
 
-    private Card[] cardsFaceUp;
+    private ArrayList<Card> cards;
 
-    private Card[] cardsFaceDown;
-
-    public int getPosition() {
-        return position;
-    }
-
-    public Pile(int position, Card[] cardsFaceUp, Card[] cardsFaceDown) {
-        super();
-        this.position = position;
-        this.cardsFaceUp = cardsFaceUp;
-        this.cardsFaceDown = cardsFaceDown;
-    }
-
-    public void setPosition(int position) {
+    public Pile(int position, Deck deck) {
+        this.cards = new ArrayList<>();
+        for (int i = 0; i < position; i++) {
+            Card card = deck.getCard();
+            this.cards.add(card);
+        }
         this.position = position;
     }
 
-    public Card[] getCardsFaceUp() {
-        return cardsFaceUp;
+    @Override
+    public String toString() {
+        if (cards.isEmpty()) {
+            return "<vacío>";
+        }
+        String stringPile = "";
+        for (int i = 0; i < cards.size() - 1; i++) {
+            stringPile += "[";
+        }
+        return stringPile + cards.get(cards.size() - 1).toString();
     }
-
-    public void setCardsFaceUp(Card[] cardsFaceUp) {
-        this.cardsFaceUp = cardsFaceUp;
-    }
-
-    public Card[] getCardsFaceDown() {
-        return cardsFaceDown;
-    }
-
-    public void setCardsFaceDown(Card[] cardsFaceDown) {
-        this.cardsFaceDown = cardsFaceDown;
-    }
-
-    // @Override
-    // public String toString() {
-    // return "Pile [position=" + position + ", cardsFaceUp=" + Arrays.toString(cardsFaceUp) + ", cardsFaceDown="
-    // + Arrays.toString(cardsFaceDown) + "]";
-    // }
 
 }

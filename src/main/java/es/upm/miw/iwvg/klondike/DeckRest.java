@@ -2,12 +2,12 @@ package es.upm.miw.iwvg.klondike;
 
 import java.util.ArrayList;
 
-public class Discard {
+public class DeckRest {
 
     private ArrayList<Card> cards;
 
-    public Discard() {
-        this.cards = new ArrayList<>();
+    public DeckRest(Deck deck) {
+        this.cards = deck.getCards();
     }
 
     public ArrayList<Card> getCards() {
@@ -16,15 +16,6 @@ public class Discard {
 
     public void setCards(ArrayList<Card> cards) {
         this.cards = cards;
-    }
-
-    @Override
-    public String toString() {
-        if (cards.isEmpty()) {
-            return "<vacío>";
-        } else {
-            return cards.toString();
-        }
     }
 
 }

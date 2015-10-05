@@ -2,22 +2,21 @@ package es.upm.miw.iwvg.klondike;
 
 public class Card {
 
-    private int number;
+    private CardValue value;
 
     private Suit suit;
 
-    public Card(int number, Suit suit) {
-        super();
-        this.number = number;
+    public Card(CardValue value, Suit suit) {
+        this.value = value;
         this.suit = suit;
     }
 
-    public int getNumber() {
-        return number;
+    public CardValue getNumber() {
+        return value;
     }
 
-    public void setNumber(int number) {
-        this.number = number;
+    public void setNumber(CardValue value) {
+        this.value = value;
     }
 
     public Suit getSuit() {
@@ -30,7 +29,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "[" + number + ", " + suit + "]";
+        return "[" + value + ", " + suit + "]";
     }
 
 }

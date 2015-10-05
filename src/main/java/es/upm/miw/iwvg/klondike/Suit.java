@@ -1,6 +1,7 @@
 package es.upm.miw.iwvg.klondike;
 
 public enum Suit {
+
     O('o'), C('c'), E('e'), B('b');
 
     private char value;
