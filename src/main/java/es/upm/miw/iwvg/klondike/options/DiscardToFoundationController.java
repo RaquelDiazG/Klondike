@@ -27,9 +27,7 @@ public class DiscardToFoundationController implements OptionControllerInterface 
         if (discard.getCards().isEmpty()) {
             io.writeln("¡ERROR! No hay cartas para colocar");
         } else {
-            // recuperamos la ultima carta del descarte
-            int lastIndex = discard.getCards().size() - 1;
-            Card card = discard.getCards().get(lastIndex);
+            Card card = discard.getLastCard();
             // recuperamos el palo de la carta
             Suit actualSuit = card.getSuit();
             // recuperamos la ultima carta del palo
@@ -38,7 +36,7 @@ public class DiscardToFoundationController implements OptionControllerInterface 
                 if (card.getCardValue() == CardValue.AS) {// tiene que ser un as
                     objetiveSuitFundation.addCard(card);
                     foundations.put(actualSuit, objetiveSuitFundation);
-                    discard.getCards().remove(lastIndex);
+                    discard.removeLastCard();
                 } else {
                     io.writeln("¡ERROR! ESA CARTA NO SE PUEDE COLOCAR EN EL PALO");
                 }
@@ -52,7 +50,7 @@ public class DiscardToFoundationController implements OptionControllerInterface 
                 if (nextCardValue == cardFoundation.getCardValue().next()) {
                     objetiveSuitFundation.addCard(card);
                     foundations.put(actualSuit, objetiveSuitFundation);
-                    discard.getCards().remove(lastIndex);
+                    discard.removeLastCard();
                 } else {
                     io.writeln("¡ERROR! ESA CARTA NO SE PUEDE COLOCAR EN EL PALO");
                 }

@@ -45,7 +45,7 @@ public class Option {
             viewInterface = new DiscardToFoundationView(optionControllerInterface);
             break;
         case 4:
-            optionControllerInterface = new DiscardToPileController();
+            optionControllerInterface = new DiscardToPileController(discard, piles);
             viewInterface = new DiscardToPileView(optionControllerInterface);
             break;
         case 5:

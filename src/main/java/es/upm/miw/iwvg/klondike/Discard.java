@@ -14,6 +14,17 @@ public class Discard {
         this.cards = new ArrayList<>();
     }
 
+    public Card getLastCard() {
+        int lastIndex = cards.size() - 1;
+        Card card = cards.get(lastIndex);
+        return card;
+    }
+
+    public void removeLastCard() {
+        int lastIndex = cards.size() - 1;
+        cards.remove(lastIndex);
+    }
+
     public ArrayList<Card> getCards() {
         return cards;
     }

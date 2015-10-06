@@ -17,6 +17,36 @@ public class Pile {
         this.position = position;
     }
 
+    public void remove() {
+        this.cards = new ArrayList<>();
+    }
+
+    public void addCard(Card card) {
+        this.cards.add(card);
+    }
+
+    public Card getLastCard() {
+        int lastIndex = cards.size() - 1;
+        Card card = cards.get(lastIndex);
+        return card;
+    }
+
+    public int getPosition() {
+        return position;
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(ArrayList<Card> cards) {
+        this.cards = cards;
+    }
+
     @Override
     public String toString() {
         if (cards.isEmpty()) {
