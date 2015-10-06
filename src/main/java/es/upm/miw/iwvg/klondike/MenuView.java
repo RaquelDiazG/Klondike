@@ -60,11 +60,12 @@ public class MenuView {
     }
 
     public void render() {
-        showStatus();
-        showMenu();
-        int numOption = readOption();
-        // Option option = menuController.getOption(numOption);
-        // menuController.control(option);
-        menuController.control(numOption);
+        do {
+            showStatus();
+            showMenu();
+            int numOption = readOption();
+            menuController.control(numOption);
+        } while (!menuController.end());
     }
+
 }

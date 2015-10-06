@@ -13,7 +13,8 @@ public class DeckToDiscardView implements ViewInterface {
     }
 
     public void render() {
-        System.out.println("SOY LA VISTA DeckToDiscardView");
+        System.out.println("Vista - Mover de baraja a descarte");
+        deckToDiscardController.control();
 
     }
 

@@ -1,6 +1,16 @@
 package es.upm.miw.iwvg.klondike;
 
+import java.util.Map;
+
 public class Klondike {
+
+    private static Deck deck;
+
+    private static Discard discard;
+
+    private static Map<Suit, Foundation> foundations;
+
+    private static Map<Integer, Pile> piles;
 
     private MenuView menuView;
 
@@ -18,4 +28,5 @@ public class Klondike {
     public static void main(String[] args) {
         new Klondike().play();
     }
+
 }

@@ -13,16 +13,12 @@ public class MenuController {
 
     private static final int NUM_PILES = 4;
 
-    private static Deck deck;
-
-    private DeckRest deckRest;
+    private Deck deck;
 
     private Discard discard;
 
-    // private Foundation[] foundations;
     private Map<Suit, Foundation> foundations;
 
-    // private Pile[] piles;
     private Map<Integer, Pile> piles;
 
     public MenuController() {
@@ -44,11 +40,9 @@ public class MenuController {
         piles.put(6, new Pile(6, deck));
         piles.put(7, new Pile(7, deck));
 
-        deckRest = new DeckRest(deck);
-
         options = new Option[NUM_OPTIONS];
         for (int i = 0; i < NUM_OPTIONS; i++) {
-            options[i] = new Option(i + 1);
+            options[i] = new Option(i + 1, deck, discard, foundations, piles);
         }
     }
 
@@ -58,12 +52,12 @@ public class MenuController {
         option.control();
     }
 
-    public Deck getDeck() {
-        return deck;
+    public boolean end() {
+        return deck.getCards().isEmpty();
     }
 
-    public DeckRest getDeckRest() {
-        return deckRest;
+    public Deck getDeck() {
+        return deck;
     }
 
     public Discard getDiscard() {

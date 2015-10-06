@@ -1,5 +1,7 @@
 package es.upm.miw.iwvg.klondike;
 
+import java.util.Map;
+
 import es.upm.miw.iwvg.klondike.options.DeckToDiscardController;
 import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
 import es.upm.miw.iwvg.klondike.options.DiscardToPileController;
@@ -27,11 +29,11 @@ public class Option {
 
     private ViewInterface viewInterface;
 
-    public Option(int option) {
+    public Option(int option, Deck deck, Discard discard, Map<Suit, Foundation> foundations, Map<Integer, Pile> piles) {
         number = option;
         switch (option) {
         case 1:
-            optionControllerInterface = new DeckToDiscardController();
+            optionControllerInterface = new DeckToDiscardController(deck, discard);
             viewInterface = new DeckToDiscardView(optionControllerInterface);
             break;
         case 2:
