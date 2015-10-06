@@ -4,8 +4,8 @@ import java.util.Map;
 
 import es.upm.miw.iwvg.klondike.options.DeckToDiscardController;
 import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
+import es.upm.miw.iwvg.klondike.options.DiscardToFoundationController;
 import es.upm.miw.iwvg.klondike.options.DiscardToPileController;
-import es.upm.miw.iwvg.klondike.options.DiscardToSuitController;
 import es.upm.miw.iwvg.klondike.options.FlipController;
 import es.upm.miw.iwvg.klondike.options.PileToPileController;
 import es.upm.miw.iwvg.klondike.options.PileToSuitController;
@@ -13,8 +13,8 @@ import es.upm.miw.iwvg.klondike.options.QuitController;
 import es.upm.miw.iwvg.klondike.options.SuitToPileController;
 import es.upm.miw.iwvg.klondike.views.DeckToDiscardView;
 import es.upm.miw.iwvg.klondike.views.DiscardToDeckView;
+import es.upm.miw.iwvg.klondike.views.DiscardToFoundationView;
 import es.upm.miw.iwvg.klondike.views.DiscardToPileView;
-import es.upm.miw.iwvg.klondike.views.DiscardToSuitView;
 import es.upm.miw.iwvg.klondike.views.FlipView;
 import es.upm.miw.iwvg.klondike.views.PileToPileView;
 import es.upm.miw.iwvg.klondike.views.PileToSuitView;
@@ -41,8 +41,8 @@ public class Option {
             viewInterface = new DiscardToDeckView(optionControllerInterface);
             break;
         case 3:
-            optionControllerInterface = new DiscardToSuitController();
-            viewInterface = new DiscardToSuitView(optionControllerInterface);
+            optionControllerInterface = new DiscardToFoundationController(discard, foundations);
+            viewInterface = new DiscardToFoundationView(optionControllerInterface);
             break;
         case 4:
             optionControllerInterface = new DiscardToPileController();

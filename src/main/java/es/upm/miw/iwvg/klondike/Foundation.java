@@ -13,6 +13,26 @@ public class Foundation {
         this.cards = new ArrayList<>();
     }
 
+    public void addCard(Card card) {
+        this.cards.add(card);
+    }
+
+    public Suit getSuit() {
+        return suit;
+    }
+
+    public void setSuit(Suit suit) {
+        this.suit = suit;
+    }
+
+    public ArrayList<Card> getCards() {
+        return cards;
+    }
+
+    public void setCards(ArrayList<Card> cards) {
+        this.cards = cards;
+    }
+
     @Override
     public String toString() {
         if (cards.isEmpty()) {

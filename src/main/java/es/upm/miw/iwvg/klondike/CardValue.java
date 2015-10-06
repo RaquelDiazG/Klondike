@@ -13,4 +13,9 @@ public enum CardValue {
     public String getValue() {
         return value;
     }
+
+    public CardValue next() {
+        CardValue[] values = values();
+        return values[(this.ordinal() + 1) % values.length];
+    }
 }

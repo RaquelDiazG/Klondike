@@ -14,4 +14,8 @@ public enum Suit {
         return value;
     }
 
+    public Suit next() {
+        Suit[] values = values();
+        return values[(this.ordinal() + 1) % values.length];
+    }
 }

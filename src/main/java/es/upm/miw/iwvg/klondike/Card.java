@@ -11,11 +11,11 @@ public class Card {
         this.suit = suit;
     }
 
-    public CardValue getNumber() {
+    public CardValue getCardValue() {
         return value;
     }
 
-    public void setNumber(CardValue value) {
+    public void setCardValue(CardValue value) {
         this.value = value;
     }
 

@@ -38,7 +38,11 @@ public class Deck {
 
     @Override
     public String toString() {
-        return "[X,X]";
+        if (cards.isEmpty()) {
+            return "<vacía>";
+        } else {
+            return "[X,X]";
+        }
     }
 
 }
