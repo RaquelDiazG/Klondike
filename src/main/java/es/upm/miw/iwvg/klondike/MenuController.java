@@ -46,6 +46,10 @@ public class MenuController {
         }
     }
 
+    public int getNumOptions() {
+        return NUM_OPTIONS;
+    }
+
     public void control(int numOption) {
         System.out.println("OPCION SELECCIONADA " + numOption);
         Option option = options[numOption - 1];
@@ -53,7 +57,7 @@ public class MenuController {
     }
 
     public boolean end() {
-        return deck.getCards().isEmpty();
+        return deck.getCards().isEmpty() && discard.getCards().isEmpty() && foundations.isEmpty();
     }
 
     public Deck getDeck() {

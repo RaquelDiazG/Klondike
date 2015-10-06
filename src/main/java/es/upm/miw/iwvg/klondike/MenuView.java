@@ -53,18 +53,17 @@ public class MenuView {
         io.writeln("9. Salir");
     }
 
-    public int readOption() {
-        IO io = new IO();
-        return io.readInt("Opción? [1-9]:");
-
-    }
-
     public void render() {
         do {
             showStatus();
             showMenu();
-            int numOption = readOption();
-            menuController.control(numOption);
+            IO io = new IO();
+            int numOption = io.readInt("Opción? [1-9]:");
+            if (numOption > menuController.getNumOptions()) {
+                io.writeln("¡ERROR! Opción no válida");
+            } else {
+                menuController.control(numOption);
+            }
         } while (!menuController.end());
     }
 

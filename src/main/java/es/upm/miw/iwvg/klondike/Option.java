@@ -37,7 +37,7 @@ public class Option {
             viewInterface = new DeckToDiscardView(optionControllerInterface);
             break;
         case 2:
-            optionControllerInterface = new DiscardToDeckController();
+            optionControllerInterface = new DiscardToDeckController(deck, discard);
             viewInterface = new DiscardToDeckView(optionControllerInterface);
             break;
         case 3:

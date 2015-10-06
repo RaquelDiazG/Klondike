@@ -14,7 +14,7 @@ public class DiscardToDeckView implements ViewInterface {
 
     @Override
     public void render() {
-        // TODO Auto-generated method stub
+        discardToDeckController.control();
 
     }
 

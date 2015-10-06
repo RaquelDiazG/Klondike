@@ -10,6 +10,10 @@ public class Discard {
         this.cards = new ArrayList<>();
     }
 
+    public void remove() {
+        this.cards = new ArrayList<>();
+    }
+
     public ArrayList<Card> getCards() {
         return cards;
     }
