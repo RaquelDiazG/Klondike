@@ -27,7 +27,13 @@ public class Discard {
         if (cards.isEmpty()) {
             return "<vacío>";
         } else {
-            return cards.toString();
+            if (cards.size() <= 3) {
+                return cards.toString();
+            } else {
+                System.out.println(cards.size());
+                return cards.subList(cards.size() - 4, cards.size() - 1).toString();
+
+            }
         }
     }
 
