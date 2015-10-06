@@ -21,6 +21,6 @@ public enum CardValue {
 
     public CardValue previous() {
         CardValue[] values = values();
-        return values[(this.ordinal() + 1) / values.length];
+        return values[(this.ordinal() - 1 + values.length) % values.length];
     }
 }

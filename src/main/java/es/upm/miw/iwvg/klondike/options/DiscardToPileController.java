@@ -3,7 +3,6 @@ package es.upm.miw.iwvg.klondike.options;
 import java.util.Map;
 
 import es.upm.miw.iwvg.klondike.Card;
-import es.upm.miw.iwvg.klondike.CardValue;
 import es.upm.miw.iwvg.klondike.Discard;
 import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
@@ -35,25 +34,28 @@ public class DiscardToPileController implements OptionControllerInterface {
     public void control() {
         // recuperamos la ultima carta del descarte
         Card card = discard.getLastCard();
-        // recuperamos la ultima carta de la pila
+        // recuperamos la pila
         Pile objetivePile = piles.get(numObjetivePile);
         if (objetivePile.getCards().isEmpty()) { // pila vacia
-            objetivePile.addCard(card);
+            objetivePile.addCardFaceUp(card);
             piles.put(numObjetivePile, objetivePile);
             discard.removeLastCard();
         } else {
             // recuperamos la ultima carta de la pila
-            Card cardPile = objetivePile.getLastCard();
-            // recuperamos numero anterior de la carta que debe encajar en el palo
-            CardValue previousCardValue = card.getCardValue().previous();
+            Card cardPile = objetivePile.getLastCardFaceUp();
             // comprobamos si encaja
-            if (previousCardValue == cardPile.getCardValue().previous()) {
-                objetivePile.addCard(card);
+            System.out.println("carta Pila " + cardPile);
+            System.out.println("carta Pila valor" + cardPile.getCardValue());
+            System.out.println("carta Pila valor anterior" + cardPile.getCardValue().previous());
+            System.out.println("carta Descarte" + card);
+            System.out.println("carta" + card.getCardValue());
+            if (card.getCardValue() == cardPile.getCardValue().previous()) {
+                objetivePile.addCardFaceUp(card);
                 piles.put(numObjetivePile, objetivePile);
                 discard.removeLastCard();
             } else {
                 IO io = new IO();
-                io.writeln("¡ERROR! ESA CARTA NO SE PUEDE COLOCAR EN EL PALO");
+                io.writeln("¡ERROR! No se puede poner " + card + " sobre " + cardPile);
             }
         }
     }

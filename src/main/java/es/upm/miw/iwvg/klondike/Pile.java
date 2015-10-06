@@ -6,28 +6,29 @@ public class Pile {
 
     private int position;
 
-    private ArrayList<Card> cards;
+    private ArrayList<Card> cardsFaceDown;
+
+    private ArrayList<Card> cardsFaceUp;
 
     public Pile(int position, Deck deck) {
-        this.cards = new ArrayList<>();
-        for (int i = 0; i < position; i++) {
+        this.cardsFaceDown = new ArrayList<>();
+        for (int i = 0; i < position - 1; i++) {
             Card card = deck.getCard();
-            this.cards.add(card);
+            this.cardsFaceDown.add(card);
         }
+        this.cardsFaceUp = new ArrayList<>();
+        Card card = deck.getCard();
+        this.cardsFaceUp.add(card);
         this.position = position;
     }
 
-    public void remove() {
-        this.cards = new ArrayList<>();
+    public void addCardFaceUp(Card card) {
+        this.cardsFaceUp.add(card);
     }
 
-    public void addCard(Card card) {
-        this.cards.add(card);
-    }
-
-    public Card getLastCard() {
-        int lastIndex = cards.size() - 1;
-        Card card = cards.get(lastIndex);
+    public Card getLastCardFaceUp() {
+        int lastIndex = cardsFaceUp.size() - 1;
+        Card card = cardsFaceUp.get(lastIndex);
         return card;
     }
 
@@ -40,23 +41,35 @@ public class Pile {
     }
 
     public ArrayList<Card> getCards() {
-        return cards;
+        ArrayList<Card> allCards = new ArrayList<Card>();
+        allCards.addAll(cardsFaceUp);
+        allCards.addAll(cardsFaceDown);
+        return allCards;
+    }
+
+    public ArrayList<Card> getCardsFaceUp() {
+        return cardsFaceUp;
+    }
+
+    public ArrayList<Card> getCardsFaceDown() {
+        return cardsFaceDown;
     }
 
     public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
+        this.cardsFaceDown = cards;
     }
 
     @Override
     public String toString() {
-        if (cards.isEmpty()) {
+        if (cardsFaceDown.isEmpty() || cardsFaceUp.isEmpty()) {
             return "<vacío>";
         }
-        String stringPile = "";
-        for (int i = 0; i < cards.size() - 1; i++) {
-            stringPile += "[";
+
+        String stringPileDown = "";
+        for (int i = 0; i < cardsFaceDown.size() - 1; i++) {
+            stringPileDown += "[";
         }
-        return stringPile + cards.get(cards.size() - 1).toString();
+        return stringPileDown + cardsFaceUp.toString();
     }
 
 }
