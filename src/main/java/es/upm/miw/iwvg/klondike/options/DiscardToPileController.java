@@ -44,11 +44,6 @@ public class DiscardToPileController implements OptionControllerInterface {
             // recuperamos la ultima carta de la pila
             Card cardPile = objetivePile.getLastCardFaceUp();
             // comprobamos si encaja
-            System.out.println("carta Pila " + cardPile);
-            System.out.println("carta Pila valor" + cardPile.getCardValue());
-            System.out.println("carta Pila valor anterior" + cardPile.getCardValue().previous());
-            System.out.println("carta Descarte" + card);
-            System.out.println("carta" + card.getCardValue());
             if (card.getCardValue() == cardPile.getCardValue().previous()) {
                 objetivePile.addCardFaceUp(card);
                 piles.put(numObjetivePile, objetivePile);

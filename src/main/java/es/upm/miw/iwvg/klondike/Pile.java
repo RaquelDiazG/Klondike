@@ -32,6 +32,11 @@ public class Pile {
         return card;
     }
 
+    public void removeLastCardFaceUp() {
+        int lastIndex = cardsFaceUp.size() - 1;
+        cardsFaceUp.remove(lastIndex);
+    }
+
     public int getPosition() {
         return position;
     }

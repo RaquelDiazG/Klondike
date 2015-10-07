@@ -17,6 +17,12 @@ public class Foundation {
         this.cards.add(card);
     }
 
+    public Card getLastCard() {
+        int lastIndex = cards.size() - 1;
+        Card card = cards.get(lastIndex);
+        return card;
+    }
+
     public Suit getSuit() {
         return suit;
     }
