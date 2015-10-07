@@ -53,7 +53,7 @@ public class Option {
             viewInterface = new PileToFoundationView(optionControllerInterface);
             break;
         case 6:
-            optionControllerInterface = new PileToPileController();
+            optionControllerInterface = new PileToPileController(piles);
             viewInterface = new PileToPileView(optionControllerInterface);
             break;
         case 7:
