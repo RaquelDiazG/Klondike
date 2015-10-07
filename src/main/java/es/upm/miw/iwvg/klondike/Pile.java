@@ -37,6 +37,17 @@ public class Pile {
         cardsFaceUp.remove(lastIndex);
     }
 
+    public Card getLastCardFaceDown() {
+        int lastIndex = cardsFaceDown.size() - 1;
+        Card card = cardsFaceDown.get(lastIndex);
+        return card;
+    }
+
+    public void removeLastCardFaceDown() {
+        int lastIndex = cardsFaceDown.size() - 1;
+        cardsFaceDown.remove(lastIndex);
+    }
+
     public int getPosition() {
         return position;
     }
@@ -50,6 +61,12 @@ public class Pile {
         allCards.addAll(cardsFaceUp);
         allCards.addAll(cardsFaceDown);
         return allCards;
+    }
+
+    public void flip() {
+        Card card = getLastCardFaceDown();
+        addCardFaceUp(card);
+        removeLastCardFaceDown();
     }
 
     public ArrayList<Card> getCardsFaceUp() {
@@ -66,15 +83,19 @@ public class Pile {
 
     @Override
     public String toString() {
-        if (cardsFaceDown.isEmpty() || cardsFaceUp.isEmpty()) {
+        if (cardsFaceDown.isEmpty()) {
             return "<vacío>";
+        } else {
+            String stringPileDown = "";
+            for (int i = 0; i < cardsFaceDown.size() - 1; i++) {
+                stringPileDown += "[";
+            }
+            if (cardsFaceUp.isEmpty()) {
+                return stringPileDown + "]";
+            } else {
+                return stringPileDown + cardsFaceUp.toString();
+            }
         }
-
-        String stringPileDown = "";
-        for (int i = 0; i < cardsFaceDown.size() - 1; i++) {
-            stringPileDown += "[";
-        }
-        return stringPileDown + cardsFaceUp.toString();
     }
 
 }

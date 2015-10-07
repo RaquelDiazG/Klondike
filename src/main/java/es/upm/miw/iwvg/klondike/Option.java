@@ -61,7 +61,7 @@ public class Option {
             viewInterface = new FoundationToPileView(optionControllerInterface);
             break;
         case 8:
-            optionControllerInterface = new FlipController();
+            optionControllerInterface = new FlipController(piles);
             viewInterface = new FlipView(optionControllerInterface);
             break;
         case 9:
