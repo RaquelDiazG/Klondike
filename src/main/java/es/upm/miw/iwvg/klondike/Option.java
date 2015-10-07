@@ -65,7 +65,7 @@ public class Option {
             viewInterface = new FlipView(optionControllerInterface);
             break;
         case 9:
-            optionControllerInterface = new QuitController();
+            optionControllerInterface = new QuitController(deck, discard, foundations, piles);
             viewInterface = new QuitView(optionControllerInterface);
             break;
         }

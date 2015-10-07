@@ -21,6 +21,10 @@ public class Deck {
         }
     }
 
+    public void end() {
+        cards = null;
+    }
+
     public ArrayList<Card> getCards() {
         return cards;
     }

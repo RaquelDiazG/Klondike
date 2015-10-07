@@ -57,7 +57,7 @@ public class MenuController {
     }
 
     public boolean end() {
-        return deck.getCards().isEmpty() && discard.getCards().isEmpty() && foundations.isEmpty();
+        return deck.getCards() == null || (deck.getCards().isEmpty() && discard.getCards().isEmpty() && piles.values().isEmpty());
     }
 
     public Deck getDeck() {
