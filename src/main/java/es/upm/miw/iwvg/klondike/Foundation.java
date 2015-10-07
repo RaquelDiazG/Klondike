@@ -23,6 +23,11 @@ public class Foundation {
         return card;
     }
 
+    public void removeLastCard() {
+        int lastIndex = cards.size() - 1;
+        cards.remove(lastIndex);
+    }
+
     public Suit getSuit() {
         return suit;
     }

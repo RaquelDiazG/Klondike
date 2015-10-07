@@ -8,7 +8,7 @@ public class Klondike {
 
     private static Discard discard;
 
-    private static Map<Suit, Foundation> foundations;
+    private static Map<Integer, Foundation> foundations;
 
     private static Map<Integer, Pile> piles;
 

@@ -7,19 +7,19 @@ import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
 import es.upm.miw.iwvg.klondike.options.DiscardToFoundationController;
 import es.upm.miw.iwvg.klondike.options.DiscardToPileController;
 import es.upm.miw.iwvg.klondike.options.FlipController;
+import es.upm.miw.iwvg.klondike.options.FundationToPileController;
 import es.upm.miw.iwvg.klondike.options.PileToFoundationController;
 import es.upm.miw.iwvg.klondike.options.PileToPileController;
 import es.upm.miw.iwvg.klondike.options.QuitController;
-import es.upm.miw.iwvg.klondike.options.SuitToPileController;
 import es.upm.miw.iwvg.klondike.views.DeckToDiscardView;
 import es.upm.miw.iwvg.klondike.views.DiscardToDeckView;
 import es.upm.miw.iwvg.klondike.views.DiscardToFoundationView;
 import es.upm.miw.iwvg.klondike.views.DiscardToPileView;
 import es.upm.miw.iwvg.klondike.views.FlipView;
+import es.upm.miw.iwvg.klondike.views.FoundationToPileView;
 import es.upm.miw.iwvg.klondike.views.PileToFoundationView;
 import es.upm.miw.iwvg.klondike.views.PileToPileView;
 import es.upm.miw.iwvg.klondike.views.QuitView;
-import es.upm.miw.iwvg.klondike.views.SuitToPileView;
 
 public class Option {
 
@@ -57,8 +57,8 @@ public class Option {
             viewInterface = new PileToPileView(optionControllerInterface);
             break;
         case 7:
-            optionControllerInterface = new SuitToPileController();
-            viewInterface = new SuitToPileView(optionControllerInterface);
+            optionControllerInterface = new FundationToPileController(foundations, piles);
+            viewInterface = new FoundationToPileView(optionControllerInterface);
             break;
         case 8:
             optionControllerInterface = new FlipController();
