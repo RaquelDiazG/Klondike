@@ -7,8 +7,6 @@ public class Deck {
 
     private ArrayList<Card> cards;
 
-    private static final int NUM_CARDS = 52;
-
     public Deck() {
         this.cards = new ArrayList<Card>();
         Suit[] suits = Suit.values();

@@ -66,10 +66,6 @@ public class Pile {
         return cardsFaceDown;
     }
 
-    public void setCards(ArrayList<Card> cards) {
-        this.cardsFaceDown = cards;
-    }
-
     @Override
     public String toString() {
         if (cardsFaceDown.isEmpty() && cardsFaceUp.isEmpty()) {

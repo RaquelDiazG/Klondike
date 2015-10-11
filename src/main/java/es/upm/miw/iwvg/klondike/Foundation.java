@@ -28,20 +28,8 @@ public class Foundation {
         cards.remove(lastIndex);
     }
 
-    public Suit getSuit() {
-        return suit;
-    }
-
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-    }
-
     public ArrayList<Card> getCards() {
         return cards;
-    }
-
-    public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
     }
 
     @Override

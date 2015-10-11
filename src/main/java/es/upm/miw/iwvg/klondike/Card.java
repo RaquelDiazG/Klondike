@@ -15,21 +15,13 @@ public class Card {
         return value;
     }
 
-    public void setCardValue(CardValue value) {
-        this.value = value;
-    }
-
     public Suit getSuit() {
         return suit;
     }
 
-    public void setSuit(Suit suit) {
-        this.suit = suit;
-    }
-
     @Override
     public String toString() {
-        return "[" + value + ", " + suit + "]";
+        return "[" + value.getValue() + ", " + suit.getValue() + "]";
     }
 
 }

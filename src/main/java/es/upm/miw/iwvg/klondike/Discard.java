@@ -29,10 +29,6 @@ public class Discard {
         return cards;
     }
 
-    public void setCards(ArrayList<Card> cards) {
-        this.cards = cards;
-    }
-
     @Override
     public String toString() {
         if (cards.isEmpty()) {
