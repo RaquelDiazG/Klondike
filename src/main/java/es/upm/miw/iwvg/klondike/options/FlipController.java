@@ -6,7 +6,7 @@ import es.upm.miw.iwvg.klondike.Pile;
 
 public class FlipController extends ControllerAbstract {
 
-    private int numObjetivePile;
+    private int numPile;
 
     public FlipController() {
         super();
@@ -15,7 +15,7 @@ public class FlipController extends ControllerAbstract {
     @Override
     public void control() {
         IO io = new IO();
-        Pile pile = piles.get(numObjetivePile);
+        Pile pile = piles.get(numPile);
         if (pile.isEmpty()) {
             io.writeln("¡ERROR! No se puede voltear en una escalera vacía");
         } else if (pile.getCardsFaceUp().isEmpty()) {
@@ -25,8 +25,8 @@ public class FlipController extends ControllerAbstract {
         }
     }
 
-    public void setNumPile(int objetivePile) {
-        this.numObjetivePile = objetivePile;
+    public void setNumPile(int numPile) {
+        this.numPile = numPile;
     }
 
 }

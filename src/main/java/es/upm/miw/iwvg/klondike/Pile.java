@@ -74,17 +74,16 @@ public class Pile {
     public String toString() {
         if (cardsFaceDown.isEmpty() && cardsFaceUp.isEmpty()) {
             return "<vacío>";
-        } else {
-            String stringPileDown = "";
-            for (int i = 0; i < cardsFaceDown.size() - 1; i++) {
-                stringPileDown += "[";
-            }
-            if (cardsFaceUp.isEmpty()) {
-                return stringPileDown + "]";
-            } else {
-                return stringPileDown + cardsFaceUp.toString();
-            }
         }
-    }
 
+        String stringPileDown = "";
+        for (int i = 0; i < cardsFaceDown.size(); i++) {
+            stringPileDown += "[";
+        }
+        String stringPileUp = "";
+        for (Card cardFaceUp : cardsFaceUp) {
+            stringPileDown += cardFaceUp;
+        }
+        return stringPileDown + stringPileUp;
+    }
 }
