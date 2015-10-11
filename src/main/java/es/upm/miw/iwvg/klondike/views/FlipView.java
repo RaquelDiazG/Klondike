@@ -2,7 +2,7 @@ package es.upm.miw.iwvg.klondike.views;
 
 import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
+import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
 import es.upm.miw.iwvg.klondike.options.FlipController;
 
@@ -10,7 +10,7 @@ public class FlipView implements ViewInterface {
 
     private FlipController flipController;
 
-    public FlipView(OptionControllerInterface controller) {
+    public FlipView(ControllerInterface controller) {
         flipController = (FlipController) controller;
     }
 

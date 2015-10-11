@@ -1,20 +1,12 @@
 package es.upm.miw.iwvg.klondike.options;
 
-import es.upm.miw.iwvg.klondike.Deck;
-import es.upm.miw.iwvg.klondike.Discard;
+import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 
-public class DiscardToDeckController implements OptionControllerInterface {
-
-    private Deck deck;
-
-    private Discard discard;
+public class DiscardToDeckController extends ControllerAbstract {
 
     public DiscardToDeckController() {
-        this.deck = Klondike.getDeck();
-        this.discard = Klondike.getDiscard();
+        super();
     }
 
     @Override

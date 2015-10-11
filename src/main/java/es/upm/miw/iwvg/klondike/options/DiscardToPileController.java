@@ -1,24 +1,16 @@
 package es.upm.miw.iwvg.klondike.options;
 
-import java.util.Map;
-
 import es.upm.miw.iwvg.klondike.Card;
-import es.upm.miw.iwvg.klondike.Discard;
+import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 
-public class DiscardToPileController implements OptionControllerInterface {
-    private Discard discard;
-
-    private Map<Integer, Pile> piles;
+public class DiscardToPileController extends ControllerAbstract {
 
     private int numObjetivePile;
 
     public DiscardToPileController() {
-        this.discard = Klondike.getDiscard();
-        this.piles = Klondike.getPiles();
+        super();
     }
 
     public void setObjetivePile(int objetivePile) {

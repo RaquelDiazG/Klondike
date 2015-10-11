@@ -116,9 +116,8 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="13" language="java" name="es.upm.miw.iwvg.klondike.OptionControllerInterface" 
-    project="Klondike.Raquel.Diaz" 
-    file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/OptionControllerInterface.java" binary="false" 
+  <interface id="13" language="java" name="es.upm.miw.iwvg.klondike.ControllerInterface" project="Klondike.Raquel.Diaz" 
+    file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/ControllerInterface.java" binary="false" 
     corner="BOTTOM_RIGHT">    
     <position height="-1" width="-1" x="1143" y="1252"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
@@ -326,32 +325,32 @@
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <association id="33">    
+  <realization id="33">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="34">    
+    <end type="SOURCE" refId="27"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="35">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="36" name="pileToPileController"/>      
+      <multiplicity id="37" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="16" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="38">    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="34" name="deck"/>      
-      <multiplicity id="35" minimum="0" maximum="1"/>    
+      <attribute id="39" name="deck"/>      
+      <multiplicity id="40" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="36">    
-    <end type="SOURCE" refId="25"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="37">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="38" name="cardsFaceDown"/>      
-      <multiplicity id="39" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="40">    
-    <end type="SOURCE" refId="22"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
   <association id="41">    
-    <end type="SOURCE" refId="23" navigable="false">      
+    <end type="SOURCE" refId="12" navigable="false">      
       <attribute id="42" name="discard"/>      
       <multiplicity id="43" minimum="0" maximum="1"/>    
     </end>    
@@ -359,404 +358,224 @@
     <display labels="true" multiplicity="true"/>  
   </association>  
   <association id="44">    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="45" name="discard"/>      
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="45" name="menuView"/>      
       <multiplicity id="46" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="47">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="48" name="menuController"/>      
-      <multiplicity id="49" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="50">    
-    <end type="SOURCE" refId="22" navigable="false">      
-      <attribute id="51" name="deck"/>      
-      <multiplicity id="52" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="53">    
-    <end type="SOURCE" refId="17"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="54">    
-    <end type="SOURCE" refId="30" navigable="false">      
-      <attribute id="55" name="flipController"/>      
-      <multiplicity id="56" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="57">    
-    <end type="SOURCE" refId="26"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="58">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="59" name="value"/>      
-      <multiplicity id="60" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="61">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="62" name="foundations"/>      
-      <multiplicity id="63" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="64">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="65" name="foundations"/>      
-      <multiplicity id="66" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="67">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="68" name="foundations"/>      
-      <multiplicity id="69" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="70">    
-    <bendpoint x="671" y="909"/>    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="71" name="suit"/>      
-      <multiplicity id="72" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="73">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="74" name="deckToDiscardController"/>      
-      <multiplicity id="75" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="20" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="76">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="77" name="discardToSuitController"/>      
-      <multiplicity id="78" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="79">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="80" name="piles"/>      
-      <multiplicity id="81" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="82">    
-    <end type="SOURCE" refId="30"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="83">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="84" name="cards"/>      
-      <multiplicity id="85" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="86">    
-    <end type="SOURCE" refId="29"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="87">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="88" name="deck"/>      
-      <multiplicity id="89" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="90">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="91" name="options"/>      
-      <multiplicity id="92" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="93">    
-    <end type="SOURCE" refId="31"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <realization id="94">    
-    <end type="SOURCE" refId="15"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="95">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="96" name="cardsFaceUp"/>      
-      <multiplicity id="97" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="98">    
-    <end type="SOURCE" refId="19" navigable="false">      
-      <attribute id="99" name="foundations"/>      
-      <multiplicity id="100" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="101">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="102" name="optionControllerInterface"/>      
-      <multiplicity id="103" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="104">    
-    <end type="SOURCE" refId="24"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="105">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="106" name="discard"/>      
-      <multiplicity id="107" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="108">    
-    <end type="SOURCE" refId="24" navigable="false">      
-      <attribute id="109" name="discardToDeckController"/>      
-      <multiplicity id="110" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="22" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="111">    
-    <end type="SOURCE" refId="32"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <realization id="112">    
-    <end type="SOURCE" refId="27"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="113">    
-    <end type="SOURCE" refId="29" navigable="false">      
-      <attribute id="114" name="pileToPileController"/>      
-      <multiplicity id="115" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="16" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="116">    
-    <end type="SOURCE" refId="15" navigable="false">      
-      <attribute id="117" name="piles"/>      
-      <multiplicity id="118" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="119">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="120" name="discard"/>      
-      <multiplicity id="121" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="122">    
-    <end type="SOURCE" refId="21"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="123">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="124" name="menuView"/>      
-      <multiplicity id="125" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="3" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="126">    
-    <end type="SOURCE" refId="20"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="127">    
+  <association id="47">    
     <end type="SOURCE" refId="31" navigable="false">      
-      <attribute id="128" name="discardToPileController"/>      
-      <multiplicity id="129" minimum="0" maximum="1"/>    
+      <attribute id="48" name="discardToPileController"/>      
+      <multiplicity id="49" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="23" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="130">    
-    <end type="SOURCE" refId="17" navigable="false">      
-      <attribute id="131" name="piles"/>      
-      <multiplicity id="132" minimum="0" maximum="2147483647"/>    
+  <realization id="50">    
+    <end type="SOURCE" refId="25"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="51">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="52" name="cardsFaceDown"/>      
+      <multiplicity id="53" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="133">    
+  <association id="54">    
     <bendpoint x="1071" y="536"/>    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="134" name="menuController"/>      
-      <multiplicity id="135" minimum="0" maximum="1"/>    
+      <attribute id="55" name="menuController"/>      
+      <multiplicity id="56" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="136">    
+  <association id="57">    
     <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="137" name="suit"/>      
-      <multiplicity id="138" minimum="0" maximum="1"/>    
+      <attribute id="58" name="suit"/>      
+      <multiplicity id="59" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="139">    
+  <association id="60">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="61" name="menuController"/>      
+      <multiplicity id="62" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="63">    
     <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="140" name="viewInterface"/>      
-      <multiplicity id="141" minimum="0" maximum="1"/>    
+      <attribute id="64" name="viewInterface"/>      
+      <multiplicity id="65" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="4" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="142">    
+  <association id="66">    
     <end type="SOURCE" refId="32" navigable="false">      
-      <attribute id="143" name="quitController"/>      
-      <multiplicity id="144" minimum="0" maximum="1"/>    
+      <attribute id="67" name="quitController"/>      
+      <multiplicity id="68" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="18" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="145">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="146" name="cards"/>      
-      <multiplicity id="147" minimum="0" maximum="2147483647"/>    
+  <association id="69">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="70" name="flipController"/>      
+      <multiplicity id="71" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
+    <end type="TARGET" refId="15" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="148">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="149" name="cards"/>      
-      <multiplicity id="150" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="151">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="152" name="discard"/>      
-      <multiplicity id="153" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="154">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="155" name="piles"/>      
-      <multiplicity id="156" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="157">    
-    <end type="SOURCE" refId="16" navigable="false">      
-      <attribute id="158" name="piles"/>      
-      <multiplicity id="159" minimum="0" maximum="2147483647"/>    
-    </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="160">    
-    <end type="SOURCE" refId="19"/>    
-    <end type="TARGET" refId="13"/>  
+  <realization id="72">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="4"/>  
   </realization>  
-  <association id="161">    
-    <end type="SOURCE" refId="21" navigable="false">      
-      <attribute id="162" name="foundations"/>      
-      <multiplicity id="163" minimum="0" maximum="2147483647"/>    
+  <association id="73">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="74" name="cards"/>      
+      <multiplicity id="75" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="76">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="77" name="cards"/>      
+      <multiplicity id="78" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="79">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="80" name="value"/>      
+      <multiplicity id="81" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="82">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="83" name="piles"/>      
+      <multiplicity id="84" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="85">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="86" name="foundations"/>      
+      <multiplicity id="87" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="11" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="164">    
-    <end type="SOURCE" refId="23" navigable="false">      
-      <attribute id="165" name="piles"/>      
-      <multiplicity id="166" minimum="0" maximum="2147483647"/>    
+  <association id="88">    
+    <bendpoint x="671" y="909"/>    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="89" name="suit"/>      
+      <multiplicity id="90" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="2" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="167">    
+  <association id="91">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="92" name="deckToDiscardController"/>      
+      <multiplicity id="93" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="94">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="95" name="discardToSuitController"/>      
+      <multiplicity id="96" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="97">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="98">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="99" name="cards"/>      
+      <multiplicity id="100" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="101">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="102">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="103" name="options"/>      
+      <multiplicity id="104" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="105">    
+    <end type="SOURCE" refId="31"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="106">    
     <end type="SOURCE" refId="28" navigable="false">      
-      <attribute id="168" name="suitToPileController"/>      
-      <multiplicity id="169" minimum="0" maximum="1"/>    
+      <attribute id="107" name="suitToPileController"/>      
+      <multiplicity id="108" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="19" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="170">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="171" name="piles"/>      
-      <multiplicity id="172" minimum="0" maximum="2147483647"/>    
+  <association id="109">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="110" name="cardsFaceUp"/>      
+      <multiplicity id="111" minimum="0" maximum="2147483647"/>    
     </end>    
-    <end type="TARGET" refId="7" navigable="true"/>    
+    <end type="TARGET" refId="8" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="173">    
-    <end type="SOURCE" refId="18" navigable="false">      
-      <attribute id="174" name="discard"/>      
-      <multiplicity id="175" minimum="0" maximum="1"/>    
+  <association id="112">    
+    <end type="SOURCE" refId="14" navigable="false">      
+      <attribute id="113" name="optionControllerInterface"/>      
+      <multiplicity id="114" minimum="0" maximum="1"/>    
     </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
+    <end type="TARGET" refId="13" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="176">    
-    <end type="SOURCE" refId="20" navigable="false">      
-      <attribute id="177" name="deck"/>      
-      <multiplicity id="178" minimum="0" maximum="1"/>    
-    </end>    
-    <end type="TARGET" refId="5" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="179">    
-    <end type="SOURCE" refId="16"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <realization id="180">    
-    <end type="SOURCE" refId="18"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <realization id="181">    
-    <end type="SOURCE" refId="23"/>    
-    <end type="TARGET" refId="13"/>  
-  </realization>  
-  <association id="182">    
+  <association id="115">    
     <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="183" name="pileToSuitController"/>      
-      <multiplicity id="184" minimum="0" maximum="1"/>    
+      <attribute id="116" name="pileToSuitController"/>      
+      <multiplicity id="117" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="17" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="185">    
+  <realization id="118">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="119">    
+    <end type="SOURCE" refId="24" navigable="false">      
+      <attribute id="120" name="discardToDeckController"/>      
+      <multiplicity id="121" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="122">    
     <end type="SOURCE" refId="28"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  

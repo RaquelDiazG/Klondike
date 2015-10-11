@@ -1,7 +1,7 @@
 package es.upm.miw.iwvg.klondike.views;
 
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
+import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
 import es.upm.miw.iwvg.klondike.options.PileToPileController;
 
@@ -9,7 +9,7 @@ public class PileToPileView implements ViewInterface {
 
     private PileToPileController pileToPileController;
 
-    public PileToPileView(OptionControllerInterface controller) {
+    public PileToPileView(ControllerInterface controller) {
         pileToPileController = (PileToPileController) controller;
     }
 

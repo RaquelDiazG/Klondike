@@ -1,20 +1,15 @@
 package es.upm.miw.iwvg.klondike.options;
 
-import java.util.Map;
-
+import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 
-public class FlipController implements OptionControllerInterface {
-
-    private Map<Integer, Pile> piles;
+public class FlipController extends ControllerAbstract {
 
     private int numObjetivePile;
 
     public FlipController() {
-        this.piles = Klondike.getPiles();
+        super();
     }
 
     @Override
@@ -28,7 +23,6 @@ public class FlipController implements OptionControllerInterface {
             IO io = new IO();
             io.writeln("¡ERROR! No se puede voltear en una escalera con cartas");
         }
-
     }
 
     public void setNumPile(int objetivePile) {

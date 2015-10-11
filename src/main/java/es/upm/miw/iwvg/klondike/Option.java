@@ -23,7 +23,7 @@ public class Option {
 
     private int number;
 
-    private OptionControllerInterface optionControllerInterface;
+    private ControllerInterface optionControllerInterface;
 
     private ViewInterface viewInterface;
 

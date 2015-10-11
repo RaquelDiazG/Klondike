@@ -1,6 +1,6 @@
 package es.upm.miw.iwvg.klondike.views;
 
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
+import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
 import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
 
@@ -8,7 +8,7 @@ public class DiscardToDeckView implements ViewInterface {
 
     private DiscardToDeckController discardToDeckController;
 
-    public DiscardToDeckView(OptionControllerInterface controller) {
+    public DiscardToDeckView(ControllerInterface controller) {
         discardToDeckController = (DiscardToDeckController) controller;
     }
 

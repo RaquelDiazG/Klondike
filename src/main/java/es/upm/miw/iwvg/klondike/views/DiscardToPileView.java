@@ -2,7 +2,7 @@ package es.upm.miw.iwvg.klondike.views;
 
 import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
+import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
 import es.upm.miw.iwvg.klondike.options.DiscardToPileController;
 
@@ -10,7 +10,7 @@ public class DiscardToPileView implements ViewInterface {
 
     private DiscardToPileController discardToPileController;
 
-    public DiscardToPileView(OptionControllerInterface controller) {
+    public DiscardToPileView(ControllerInterface controller) {
         discardToPileController = (DiscardToPileController) controller;
     }
 

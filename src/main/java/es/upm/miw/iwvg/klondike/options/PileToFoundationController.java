@@ -1,27 +1,16 @@
 package es.upm.miw.iwvg.klondike.options;
 
-import java.util.Map;
-
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
-import es.upm.miw.iwvg.klondike.Foundation;
+import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
-import es.upm.miw.iwvg.klondike.Pile;
-import es.upm.miw.iwvg.klondike.Suit;
 
-public class PileToFoundationController implements OptionControllerInterface {
-
-    private Map<Integer, Pile> piles;
-
-    private Map<Suit, Foundation> foundations;
+public class PileToFoundationController extends ControllerAbstract {
 
     private int numPile;
 
     public PileToFoundationController() {
-        this.piles = Klondike.getPiles();
-        this.foundations = Klondike.getFoundations();
+        super();
     }
 
     @Override

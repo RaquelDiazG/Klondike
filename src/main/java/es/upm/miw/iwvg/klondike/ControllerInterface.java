@@ -1,6 +1,6 @@
 package es.upm.miw.iwvg.klondike;
 
-public interface OptionControllerInterface {
+public interface ControllerInterface {
 
     public void control();
 }

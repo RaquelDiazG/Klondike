@@ -1,25 +1,16 @@
 package es.upm.miw.iwvg.klondike.options;
 
-import java.util.Map;
-
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
-import es.upm.miw.iwvg.klondike.Discard;
+import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.Foundation;
 import es.upm.miw.iwvg.klondike.IO;
-import es.upm.miw.iwvg.klondike.Klondike;
-import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Suit;
 
-public class DiscardToFoundationController implements OptionControllerInterface {
-
-    private Discard discard;
-
-    private Map<Suit, Foundation> foundations;
+public class DiscardToFoundationController extends ControllerAbstract {
 
     public DiscardToFoundationController() {
-        this.discard = Klondike.getDiscard();
-        this.foundations = Klondike.getFoundations();
+        super();
     }
 
     @Override

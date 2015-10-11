@@ -4,7 +4,7 @@
   <class id="1" language="java" name="es.upm.miw.iwvg.klondike.MenuController" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/MenuController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="261" width="176" x="487" y="693"/>    
+    <position height="-1" width="-1" x="883" y="678"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -13,7 +13,7 @@
   </class>  
   <enumeration id="2" language="java" name="es.upm.miw.iwvg.klondike.Suit" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Suit.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="993" y="1502"/>    
+    <position height="-1" width="-1" x="-333" y="553"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -23,7 +23,7 @@
   <class id="3" language="java" name="es.upm.miw.iwvg.klondike.MenuView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/MenuView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="135" width="158" x="484" y="518"/>    
+    <position height="-1" width="-1" x="924" y="378"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -33,7 +33,7 @@
   <interface id="4" language="java" name="es.upm.miw.iwvg.klondike.ViewInterface" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/ViewInterface.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="119" x="-112" y="1367"/>    
+    <position height="-1" width="-1" x="902" y="1124"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -42,7 +42,7 @@
   </interface>  
   <class id="5" language="java" name="es.upm.miw.iwvg.klondike.Deck" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Deck.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="189" width="181" x="741" y="994"/>    
+    <position height="-1" width="-1" x="156" y="345"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -51,7 +51,7 @@
   </class>  
   <class id="6" language="java" name="es.upm.miw.iwvg.klondike.IO" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/IO.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-9" y="653"/>    
+    <position height="-1" width="-1" x="-468" y="68"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -60,7 +60,7 @@
   </class>  
   <class id="7" language="java" name="es.upm.miw.iwvg.klondike.Pile" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Pile.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="333" width="214" x="487" y="994"/>    
+    <position height="-1" width="-1" x="430" y="449"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -69,7 +69,7 @@
   </class>  
   <class id="8" language="java" name="es.upm.miw.iwvg.klondike.Card" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Card.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="645" y="1514"/>    
+    <position height="-1" width="-1" x="-117" y="725"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -79,7 +79,7 @@
   <enumeration id="9" language="java" name="es.upm.miw.iwvg.klondike.CardValue" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/CardValue.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="635" y="1817"/>    
+    <position height="-1" width="-1" x="-333" y="908"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -89,7 +89,7 @@
   <class id="10" language="java" name="es.upm.miw.iwvg.klondike.Discard" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Discard.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="189" width="181" x="266" y="994"/>    
+    <position height="-1" width="-1" x="633" y="717"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
@@ -99,602 +99,567 @@
   <class id="11" language="java" name="es.upm.miw.iwvg.klondike.Foundation" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Foundation.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="225" width="181" x="962" y="994"/>    
+    <position height="-1" width="-1" x="-114" y="263"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="12" language="java" name="es.upm.miw.iwvg.klondike.Klondike" project="Klondike.Raquel.Diaz" 
+  <class id="12" language="java" name="es.upm.miw.iwvg.klondike.ControllerAbstract" project="Klondike.Raquel.Diaz" 
+    file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/ControllerAbstract.java" binary="false" 
+    corner="BOTTOM_RIGHT">    
+    <position height="-1" width="-1" x="299" y="1266"/>    
+    <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
+      sort-features="false" accessors="true" visibility="true">      
+      <attributes public="true" package="true" protected="true" private="true" static="true"/>      
+      <operations public="true" package="true" protected="true" private="true" static="true"/>    
+    </display>  
+  </class>  
+  <class id="13" language="java" name="es.upm.miw.iwvg.klondike.Klondike" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Klondike.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="537" y="285"/>    
+    <position height="-1" width="-1" x="660" y="-72"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <interface id="13" language="java" name="es.upm.miw.iwvg.klondike.ControllerInterface" project="Klondike.Raquel.Diaz" 
+  <interface id="14" language="java" name="es.upm.miw.iwvg.klondike.ControllerInterface" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/ControllerInterface.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="81" width="168" x="47" y="1367"/>    
+    <position height="-1" width="-1" x="667" y="1124"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </interface>  
-  <class id="14" language="java" name="es.upm.miw.iwvg.klondike.Option" project="Klondike.Raquel.Diaz" 
+  <class id="15" language="java" name="es.upm.miw.iwvg.klondike.Option" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/Option.java" binary="false" corner="BOTTOM_RIGHT">    
-    <position height="117" width="338" x="-112" y="994"/>    
+    <position height="-1" width="-1" x="762" y="953"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="15" language="java" name="es.upm.miw.iwvg.klondike.options.FlipController" project="Klondike.Raquel.Diaz" 
+  <class id="16" language="java" name="es.upm.miw.iwvg.klondike.options.FlipController" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/FlipController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-848" y="2122"/>    
+    <position height="-1" width="-1" x="1284" y="1580"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="16" language="java" name="es.upm.miw.iwvg.klondike.options.PileToPileController" 
+  <class id="17" language="java" name="es.upm.miw.iwvg.klondike.options.PileToPileController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/PileToPileController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-615" y="2140"/>    
+    <position height="-1" width="-1" x="1060" y="1572"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="17" language="java" name="es.upm.miw.iwvg.klondike.options.PileToFoundationController" 
+  <class id="18" language="java" name="es.upm.miw.iwvg.klondike.options.PileToFoundationController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/PileToFoundationController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-296" y="2122"/>    
+    <position height="-1" width="-1" x="164" y="1556"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="18" language="java" name="es.upm.miw.iwvg.klondike.options.QuitController" project="Klondike.Raquel.Diaz" 
+  <class id="19" language="java" name="es.upm.miw.iwvg.klondike.options.QuitController" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/QuitController.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="99" y="2086"/>    
+    <position height="-1" width="-1" x="1804" y="1574"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="19" language="java" name="es.upm.miw.iwvg.klondike.options.FundationToPileController" 
+  <class id="20" language="java" name="es.upm.miw.iwvg.klondike.options.FundationToPileController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/FundationToPileController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="491" y="2158"/>    
+    <position height="-1" width="-1" x="756" y="1554"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="20" language="java" name="es.upm.miw.iwvg.klondike.options.DeckToDiscardController" 
+  <class id="21" language="java" name="es.upm.miw.iwvg.klondike.options.DeckToDiscardController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/DeckToDiscardController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="812" y="2095"/>    
+    <position height="-1" width="-1" x="456" y="1555"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="21" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToFoundationController" 
+  <class id="22" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToFoundationController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/DiscardToFoundationController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1123" y="2086"/>    
+    <position height="-1" width="-1" x="-138" y="1582"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="22" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToDeckController" 
+  <class id="23" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToDeckController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/DiscardToDeckController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1435" y="2086"/>    
+    <position height="-1" width="-1" x="-447" y="1578"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="23" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToPileController" 
+  <class id="24" language="java" name="es.upm.miw.iwvg.klondike.options.DiscardToPileController" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/options/DiscardToPileController.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1716" y="2122"/>    
+    <position height="-1" width="-1" x="1535" y="1572"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="24" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToDeckView" project="Klondike.Raquel.Diaz" 
+  <class id="25" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToDeckView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/DiscardToDeckView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1360" y="2486"/>    
+    <position height="-1" width="-1" x="-460" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="25" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToFoundationView" 
+  <class id="26" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToFoundationView" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/DiscardToFoundationView.java" 
     binary="false" corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="998" y="2480"/>    
+    <position height="-1" width="-1" x="-154" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="26" language="java" name="es.upm.miw.iwvg.klondike.views.PileToFoundationView" 
+  <class id="27" language="java" name="es.upm.miw.iwvg.klondike.views.PileToFoundationView" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/PileToFoundationView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-293" y="2484"/>    
+    <position height="-1" width="-1" x="157" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="27" language="java" name="es.upm.miw.iwvg.klondike.views.DeckToDiscardView" project="Klondike.Raquel.Diaz" 
+  <class id="28" language="java" name="es.upm.miw.iwvg.klondike.views.DeckToDiscardView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/DeckToDiscardView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="643" y="2482"/>    
+    <position height="-1" width="-1" x="453" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="28" language="java" name="es.upm.miw.iwvg.klondike.views.FoundationToPileView" 
+  <class id="29" language="java" name="es.upm.miw.iwvg.klondike.views.FoundationToPileView" 
     project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/FoundationToPileView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="329" y="2478"/>    
+    <position height="-1" width="-1" x="749" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="29" language="java" name="es.upm.miw.iwvg.klondike.views.PileToPileView" project="Klondike.Raquel.Diaz" 
+  <class id="30" language="java" name="es.upm.miw.iwvg.klondike.views.PileToPileView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/PileToPileView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-590" y="2482"/>    
+    <position height="-1" width="-1" x="1030" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="30" language="java" name="es.upm.miw.iwvg.klondike.views.FlipView" project="Klondike.Raquel.Diaz" 
+  <class id="31" language="java" name="es.upm.miw.iwvg.klondike.views.FlipView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/FlipView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="-842" y="2486"/>    
+    <position height="-1" width="-1" x="1280" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="31" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToPileView" project="Klondike.Raquel.Diaz" 
+  <class id="32" language="java" name="es.upm.miw.iwvg.klondike.views.DiscardToPileView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/DiscardToPileView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="1698" y="2486"/>    
+    <position height="-1" width="-1" x="1540" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <class id="32" language="java" name="es.upm.miw.iwvg.klondike.views.QuitView" project="Klondike.Raquel.Diaz" 
+  <class id="33" language="java" name="es.upm.miw.iwvg.klondike.views.QuitView" project="Klondike.Raquel.Diaz" 
     file="/Klondike.Raquel.Diaz/src/main/java/es/upm/miw/iwvg/klondike/views/QuitView.java" binary="false" 
     corner="BOTTOM_RIGHT">    
-    <position height="-1" width="-1" x="9" y="2474"/>    
+    <position height="-1" width="-1" x="1801" y="1868"/>    
     <display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
       sort-features="false" accessors="true" visibility="true">      
       <attributes public="true" package="true" protected="true" private="true" static="true"/>      
       <operations public="true" package="true" protected="true" private="true" static="true"/>    
     </display>  
   </class>  
-  <realization id="33">    
-    <end type="SOURCE" refId="29"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="34">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="35" name="cardsFaceUp">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="36" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="37">    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="38" name="cards">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="39" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="40">    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="41" name="menuView">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="42" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="3" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="43">    
-    <end type="SOURCE" refId="32" navigable="false">      
-      <attribute id="44" name="quitController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="45" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="18" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="46">    
-    <end type="SOURCE" refId="25"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="47">    
-    <end type="SOURCE" refId="31" navigable="false">      
-      <attribute id="48" name="discardToPileController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="49" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="23" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="50">    
-    <end type="SOURCE" refId="5" navigable="false">      
-      <attribute id="51" name="cards">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="52" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="53">    
-    <end type="SOURCE" refId="24" navigable="false">      
-      <attribute id="54" name="discardToDeckController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="55" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="22" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="56">    
-    <bendpoint x="832" y="518"/>    
-    <bendpoint x="832" y="693"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="57" name="foundations">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="58" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="11" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="59">    
-    <end type="SOURCE" refId="27" navigable="false">      
-      <attribute id="60" name="deckToDiscardController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="61" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="20" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="62">    
-    <end type="SOURCE" refId="32"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="63">    
-    <end type="SOURCE" refId="26" navigable="false">      
-      <attribute id="64" name="pileToSuitController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="65" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="17" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="66">    
+  <generalization id="34">    
+    <end type="SOURCE" refId="23"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <realization id="35">    
     <end type="SOURCE" refId="27"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <realization id="67">    
-    <end type="SOURCE" refId="26"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="68">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="69" name="optionControllerInterface">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="70" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="13" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="71">    
-    <end type="SOURCE" refId="25" navigable="false">      
-      <attribute id="72" name="discardToSuitController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="73" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="21" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="74">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="75" name="suit">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="76" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="77">    
-    <end type="SOURCE" refId="14" navigable="false">      
-      <attribute id="78" name="viewInterface">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="79" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="4" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="80">    
-    <bendpoint x="971" y="1367"/>    
-    <end type="SOURCE" refId="11" navigable="false">      
-      <attribute id="81" name="suit">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="82" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="2" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="83">    
-    <end type="SOURCE" refId="28"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="84">    
-    <end type="SOURCE" refId="7" navigable="false">      
-      <attribute id="85" name="cardsFaceDown">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="86" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="87">    
-    <end type="SOURCE" refId="10" navigable="false">      
-      <attribute id="88" name="cards">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="89" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="8" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="90">    
-    <bendpoint x="672" y="518"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="91" name="menuController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="92" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="1" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="93">    
-    <bendpoint x="453" y="518"/>    
-    <bendpoint x="453" y="693"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="94" name="discard">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="95" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="10" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="96">    
-    <bendpoint x="722" y="518"/>    
-    <bendpoint x="722" y="693"/>    
-    <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="97" name="deck">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="98" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+  <association id="36">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="37" name="deck"/>      
+      <multiplicity id="38" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="5" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="99">    
-    <end type="SOURCE" refId="30"/>    
+  <association id="39">    
+    <end type="SOURCE" refId="26" navigable="false">      
+      <attribute id="40" name="discardToSuitController"/>      
+      <multiplicity id="41" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="22" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="42">    
+    <end type="SOURCE" refId="25"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
-  <association id="100">    
-    <end type="SOURCE" refId="1" navigable="false">      
-      <attribute id="101" name="options">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="102" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="14" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="103">    
-    <end type="SOURCE" refId="8" navigable="false">      
-      <attribute id="104" name="value">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="105" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="9" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <association id="106">    
-    <end type="SOURCE" refId="30" navigable="false">      
-      <attribute id="107" name="flipController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="108" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
-    </end>    
-    <end type="TARGET" refId="15" navigable="true"/>    
-    <display labels="true" multiplicity="true"/>  
-  </association>  
-  <realization id="109">    
-    <end type="SOURCE" refId="24"/>    
-    <end type="TARGET" refId="4"/>  
-  </realization>  
-  <association id="110">    
-    <end type="SOURCE" refId="29" navigable="false">      
-      <attribute id="111" name="pileToPileController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="112" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+  <generalization id="43">    
+    <end type="SOURCE" refId="22"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="44">    
+    <end type="SOURCE" refId="31" navigable="false">      
+      <attribute id="45" name="flipController"/>      
+      <multiplicity id="46" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="16" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="113">    
-    <end type="SOURCE" refId="3" navigable="false">      
-      <attribute id="114" name="menuController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="115" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+  <generalization id="47">    
+    <end type="SOURCE" refId="18"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="48">    
+    <bendpoint x="806" y="464"/>    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="49" name="menuController"/>      
+      <multiplicity id="50" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="1" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="116">    
-    <bendpoint x="693" y="518"/>    
-    <bendpoint x="693" y="693"/>    
+  <generalization id="51">    
+    <end type="SOURCE" refId="24"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="52">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="53" name="cards"/>      
+      <multiplicity id="54" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="55">    
     <end type="SOURCE" refId="12" navigable="false">      
-      <attribute id="117" name="piles">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="118" minimum="0" maximum="2147483647">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+      <attribute id="56" name="foundations"/>      
+      <multiplicity id="57" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="58">    
+    <end type="SOURCE" refId="25" navigable="false">      
+      <attribute id="59" name="discardToDeckController"/>      
+      <multiplicity id="60" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="23" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="61">    
+    <end type="SOURCE" refId="16"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="62">    
+    <end type="SOURCE" refId="28" navigable="false">      
+      <attribute id="63" name="deckToDiscardController"/>      
+      <multiplicity id="64" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="21" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="65">    
+    <end type="SOURCE" refId="5" navigable="false">      
+      <attribute id="66" name="cards"/>      
+      <multiplicity id="67" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="68">    
+    <end type="SOURCE" refId="10" navigable="false">      
+      <attribute id="69" name="cards"/>      
+      <multiplicity id="70" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="71">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="72" name="discard"/>      
+      <multiplicity id="73" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="74">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="75" name="cardsFaceUp"/>      
+      <multiplicity id="76" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="77">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="78" name="menuView"/>      
+      <multiplicity id="79" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="3" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="80">    
+    <end type="SOURCE" refId="20"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="81">    
+    <end type="SOURCE" refId="3" navigable="false">      
+      <attribute id="82" name="menuController"/>      
+      <multiplicity id="83" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="1" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="84">    
+    <end type="SOURCE" refId="32"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="85">    
+    <end type="SOURCE" refId="33"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="86">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="87" name="viewInterface"/>      
+      <multiplicity id="88" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="4" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="89">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="90" name="piles"/>      
+      <multiplicity id="91" minimum="0" maximum="2147483647"/>    
     </end>    
     <end type="TARGET" refId="7" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <association id="119">    
-    <end type="SOURCE" refId="28" navigable="false">      
-      <attribute id="120" name="suitToPileController">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </attribute>      
-      <multiplicity id="121" minimum="0" maximum="1">        
-        <position height="0" width="0" x="0" y="0"/>      
-      </multiplicity>    
+  <association id="92">    
+    <end type="SOURCE" refId="32" navigable="false">      
+      <attribute id="93" name="discardToPileController"/>      
+      <multiplicity id="94" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="24" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="95">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="96" name="foundations"/>      
+      <multiplicity id="97" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="11" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="98">    
+    <end type="SOURCE" refId="28"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="99">    
+    <end type="SOURCE" refId="15" navigable="false">      
+      <attribute id="100" name="optionControllerInterface"/>      
+      <multiplicity id="101" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="14" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="102">    
+    <end type="SOURCE" refId="19"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="103">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="104" name="suit"/>      
+      <multiplicity id="105" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="106">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="107" name="discard"/>      
+      <multiplicity id="108" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="10" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="109">    
+    <end type="SOURCE" refId="11" navigable="false">      
+      <attribute id="110" name="suit"/>      
+      <multiplicity id="111" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="2" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="112">    
+    <end type="SOURCE" refId="26"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <realization id="113">    
+    <end type="SOURCE" refId="30"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="114">    
+    <end type="SOURCE" refId="29" navigable="false">      
+      <attribute id="115" name="suitToPileController"/>      
+      <multiplicity id="116" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="20" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="117">    
+    <end type="SOURCE" refId="30" navigable="false">      
+      <attribute id="118" name="pileToPileController"/>      
+      <multiplicity id="119" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="17" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <generalization id="120">    
+    <end type="SOURCE" refId="17"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <association id="121">    
+    <end type="SOURCE" refId="27" navigable="false">      
+      <attribute id="122" name="pileToSuitController"/>      
+      <multiplicity id="123" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="18" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="124">    
+    <end type="SOURCE" refId="33" navigable="false">      
+      <attribute id="125" name="quitController"/>      
+      <multiplicity id="126" minimum="0" maximum="1"/>    
     </end>    
     <end type="TARGET" refId="19" navigable="true"/>    
     <display labels="true" multiplicity="true"/>  
   </association>  
-  <realization id="122">    
+  <generalization id="127">    
+    <end type="SOURCE" refId="21"/>    
+    <end type="TARGET" refId="12"/>  
+  </generalization>  
+  <realization id="128">    
     <end type="SOURCE" refId="31"/>    
     <end type="TARGET" refId="4"/>  
   </realization>  
+  <association id="129">    
+    <end type="SOURCE" refId="1" navigable="false">      
+      <attribute id="130" name="options"/>      
+      <multiplicity id="131" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="15" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="132">    
+    <end type="SOURCE" refId="29"/>    
+    <end type="TARGET" refId="4"/>  
+  </realization>  
+  <association id="133">    
+    <end type="SOURCE" refId="7" navigable="false">      
+      <attribute id="134" name="cardsFaceDown"/>      
+      <multiplicity id="135" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="8" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <realization id="136">    
+    <end type="SOURCE" refId="12"/>    
+    <end type="TARGET" refId="14"/>  
+  </realization>  
+  <association id="137">    
+    <end type="SOURCE" refId="8" navigable="false">      
+      <attribute id="138" name="value"/>      
+      <multiplicity id="139" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="9" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="140">    
+    <end type="SOURCE" refId="12" navigable="false">      
+      <attribute id="141" name="deck"/>      
+      <multiplicity id="142" minimum="0" maximum="1"/>    
+    </end>    
+    <end type="TARGET" refId="5" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
+  <association id="143">    
+    <end type="SOURCE" refId="13" navigable="false">      
+      <attribute id="144" name="piles"/>      
+      <multiplicity id="145" minimum="0" maximum="2147483647"/>    
+    </end>    
+    <end type="TARGET" refId="7" navigable="true"/>    
+    <display labels="true" multiplicity="true"/>  
+  </association>  
   <classifier-display autosize="true" stereotype="true" package="true" initial-value="false" signature="true" 
     sort-features="false" accessors="true" visibility="true">    
     <attributes public="true" package="true" protected="true" private="true" static="true"/>    
