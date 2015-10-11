@@ -3,6 +3,7 @@ package es.upm.miw.iwvg.klondike.options;
 import es.upm.miw.iwvg.klondike.Deck;
 import es.upm.miw.iwvg.klondike.Discard;
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 
 public class DiscardToDeckController implements OptionControllerInterface {
@@ -11,9 +12,9 @@ public class DiscardToDeckController implements OptionControllerInterface {
 
     private Discard discard;
 
-    public DiscardToDeckController(Deck deck, Discard discard) {
-        this.deck = deck;
-        this.discard = discard;
+    public DiscardToDeckController() {
+        this.deck = Klondike.getDeck();
+        this.discard = Klondike.getDiscard();
     }
 
     @Override

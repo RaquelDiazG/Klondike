@@ -1,7 +1,5 @@
 package es.upm.miw.iwvg.klondike;
 
-import java.util.Map;
-
 import es.upm.miw.iwvg.klondike.options.DeckToDiscardController;
 import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
 import es.upm.miw.iwvg.klondike.options.DiscardToFoundationController;
@@ -29,43 +27,43 @@ public class Option {
 
     private ViewInterface viewInterface;
 
-    public Option(int option, Deck deck, Discard discard, Map<Suit, Foundation> foundations, Map<Integer, Pile> piles) {
+    public Option(int option) {
         number = option;
         switch (option) {
         case 1:
-            optionControllerInterface = new DeckToDiscardController(deck, discard);
+            optionControllerInterface = new DeckToDiscardController();
             viewInterface = new DeckToDiscardView(optionControllerInterface);
             break;
         case 2:
-            optionControllerInterface = new DiscardToDeckController(deck, discard);
+            optionControllerInterface = new DiscardToDeckController();
             viewInterface = new DiscardToDeckView(optionControllerInterface);
             break;
         case 3:
-            optionControllerInterface = new DiscardToFoundationController(discard, foundations);
+            optionControllerInterface = new DiscardToFoundationController();
             viewInterface = new DiscardToFoundationView(optionControllerInterface);
             break;
         case 4:
-            optionControllerInterface = new DiscardToPileController(discard, piles);
+            optionControllerInterface = new DiscardToPileController();
             viewInterface = new DiscardToPileView(optionControllerInterface);
             break;
         case 5:
-            optionControllerInterface = new PileToFoundationController(piles, foundations);
+            optionControllerInterface = new PileToFoundationController();
             viewInterface = new PileToFoundationView(optionControllerInterface);
             break;
         case 6:
-            optionControllerInterface = new PileToPileController(piles);
+            optionControllerInterface = new PileToPileController();
             viewInterface = new PileToPileView(optionControllerInterface);
             break;
         case 7:
-            optionControllerInterface = new FundationToPileController(foundations, piles);
+            optionControllerInterface = new FundationToPileController();
             viewInterface = new FoundationToPileView(optionControllerInterface);
             break;
         case 8:
-            optionControllerInterface = new FlipController(piles);
+            optionControllerInterface = new FlipController();
             viewInterface = new FlipView(optionControllerInterface);
             break;
         case 9:
-            optionControllerInterface = new QuitController(deck, discard, foundations, piles);
+            optionControllerInterface = new QuitController();
             viewInterface = new QuitView(optionControllerInterface);
             break;
         }

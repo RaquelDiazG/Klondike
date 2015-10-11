@@ -1,78 +1,29 @@
 package es.upm.miw.iwvg.klondike;
 
-import java.util.HashMap;
-import java.util.Map;
-
 public class MenuController {
 
     private Option[] options;
 
-    private static final int NUM_OPTIONS = 9;
-
-    private static final int NUM_FUNDATIONS = 7;
-
-    private static final int NUM_PILES = 4;
-
-    private Deck deck;
-
-    private Discard discard;
-
-    private Map<Suit, Foundation> foundations;
-
-    private Map<Integer, Pile> piles;
+    private static final int NUM_OPTIONS = 9; // SINGLETON PATTERN
 
     public MenuController() {
-        deck = new Deck();
-        discard = new Discard();
-
-        foundations = new HashMap<>();
-        foundations.put(Suit.valueOf("O"), new Foundation(Suit.valueOf("O")));
-        foundations.put(Suit.valueOf("C"), new Foundation(Suit.valueOf("C")));
-        foundations.put(Suit.valueOf("E"), new Foundation(Suit.valueOf("E")));
-        foundations.put(Suit.valueOf("B"), new Foundation(Suit.valueOf("B")));
-
-        piles = new HashMap<>();
-        piles.put(1, new Pile(1, deck));
-        piles.put(2, new Pile(2, deck));
-        piles.put(3, new Pile(3, deck));
-        piles.put(4, new Pile(4, deck));
-        piles.put(5, new Pile(5, deck));
-        piles.put(6, new Pile(6, deck));
-        piles.put(7, new Pile(7, deck));
-
         options = new Option[NUM_OPTIONS];
         for (int i = 0; i < NUM_OPTIONS; i++) {
-            options[i] = new Option(i + 1, deck, discard, foundations, piles);
+            options[i] = new Option(i + 1);
         }
     }
 
-    public int getNumOptions() {
-        return NUM_OPTIONS;
-    }
-
     public void control(int numOption) {
-        System.out.println("OPCION SELECCIONADA " + numOption);
         Option option = options[numOption - 1];
         option.control();
     }
 
     public boolean end() {
-        return deck.getCards() == null || (deck.getCards().isEmpty() && discard.getCards().isEmpty() && piles.values().isEmpty());
+        return Klondike.getDeck().getCards() == null || (Klondike.getDeck().getCards().isEmpty()
+                && Klondike.getDiscard().getCards().isEmpty() && Klondike.getPiles().values().isEmpty());
     }
 
-    public Deck getDeck() {
-        return deck;
-    }
-
-    public Discard getDiscard() {
-        return discard;
-    }
-
-    public Foundation getFoundation(Suit suit) {
-        return foundations.get(suit);
-    }
-
-    public Pile getPile(int position) {
-        return piles.get(position);
+    public static int getNumOptions() { // ACCESS TO SINGLETON PATTERN
+        return NUM_OPTIONS;
     }
 }

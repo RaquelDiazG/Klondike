@@ -7,6 +7,7 @@ import es.upm.miw.iwvg.klondike.CardValue;
 import es.upm.miw.iwvg.klondike.Discard;
 import es.upm.miw.iwvg.klondike.Foundation;
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Suit;
 
@@ -16,9 +17,9 @@ public class DiscardToFoundationController implements OptionControllerInterface 
 
     private Map<Suit, Foundation> foundations;
 
-    public DiscardToFoundationController(Discard discard, Map<Suit, Foundation> foundations) {
-        this.discard = discard;
-        this.foundations = foundations;
+    public DiscardToFoundationController() {
+        this.discard = Klondike.getDiscard();
+        this.foundations = Klondike.getFoundations();
     }
 
     @Override

@@ -5,6 +5,7 @@ import java.util.Map;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 
@@ -18,8 +19,8 @@ public class PileToPileController implements OptionControllerInterface {
 
     private int numCards;
 
-    public PileToPileController(Map<Integer, Pile> piles) {
-        this.piles = piles;
+    public PileToPileController() {
+        this.piles = Klondike.getPiles();
     }
 
     @Override

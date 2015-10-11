@@ -3,6 +3,7 @@ package es.upm.miw.iwvg.klondike.options;
 import java.util.Map;
 
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 
@@ -10,12 +11,10 @@ public class FlipController implements OptionControllerInterface {
 
     private Map<Integer, Pile> piles;
 
-    private static final int NUM_PILES = 7;
-
     private int numObjetivePile;
 
-    public FlipController(Map<Integer, Pile> piles) {
-        this.piles = piles;
+    public FlipController() {
+        this.piles = Klondike.getPiles();
     }
 
     @Override
@@ -36,7 +35,4 @@ public class FlipController implements OptionControllerInterface {
         this.numObjetivePile = objetivePile;
     }
 
-    public int getNumPiles() {
-        return NUM_PILES;
-    }
 }

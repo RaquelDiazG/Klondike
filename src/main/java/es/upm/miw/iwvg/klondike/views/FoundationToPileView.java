@@ -1,6 +1,7 @@
 package es.upm.miw.iwvg.klondike.views;
 
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
 import es.upm.miw.iwvg.klondike.options.FundationToPileController;
@@ -18,9 +19,9 @@ public class FoundationToPileView implements ViewInterface {
         IO io = new IO();
         int numFoundation = io.readInt("De qué palo? [1-4]:");
         int numPile = io.readInt("A qué escalera? [1-7]:");
-        if (numFoundation > suitToPileController.getNumFoundations()) {
+        if (numFoundation > Klondike.getNumFoundations()) {
             io.writeln("¡ERROR! Palo no válido");
-        } else if (numPile > suitToPileController.getNumPiles()) {
+        } else if (numPile > Klondike.getNumPiles()) {
             io.writeln("¡ERROR! Escalera no válida");
         } else {
             suitToPileController.setNumFoundation(numFoundation);

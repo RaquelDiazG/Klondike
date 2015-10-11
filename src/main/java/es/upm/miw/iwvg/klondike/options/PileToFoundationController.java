@@ -6,6 +6,7 @@ import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
 import es.upm.miw.iwvg.klondike.Foundation;
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 import es.upm.miw.iwvg.klondike.Suit;
@@ -16,13 +17,11 @@ public class PileToFoundationController implements OptionControllerInterface {
 
     private Map<Suit, Foundation> foundations;
 
-    private static final int NUM_PILES = 7;
-
     private int numPile;
 
-    public PileToFoundationController(Map<Integer, Pile> piles, Map<Suit, Foundation> foundations) {
-        this.piles = piles;
-        this.foundations = foundations;
+    public PileToFoundationController() {
+        this.piles = Klondike.getPiles();
+        this.foundations = Klondike.getFoundations();
     }
 
     @Override
@@ -53,10 +52,6 @@ public class PileToFoundationController implements OptionControllerInterface {
                 io.writeln("¡ERROR! No se puede poner " + cardPile + " sobre " + cardFoundation);
             }
         }
-    }
-
-    public int getNumPiles() {
-        return NUM_PILES;
     }
 
     public void setNumPile(int numPile) {

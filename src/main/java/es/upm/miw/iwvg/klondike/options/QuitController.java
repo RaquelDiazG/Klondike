@@ -5,6 +5,7 @@ import java.util.Map;
 import es.upm.miw.iwvg.klondike.Deck;
 import es.upm.miw.iwvg.klondike.Discard;
 import es.upm.miw.iwvg.klondike.Foundation;
+import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.OptionControllerInterface;
 import es.upm.miw.iwvg.klondike.Pile;
 import es.upm.miw.iwvg.klondike.Suit;
@@ -19,11 +20,11 @@ public class QuitController implements OptionControllerInterface {
 
     private Map<Integer, Pile> piles;
 
-    public QuitController(Deck deck, Discard discard, Map<Suit, Foundation> foundations, Map<Integer, Pile> piles) {
-        this.deck = deck;
-        this.discard = discard;
-        this.foundations = foundations;
-        this.piles = piles;
+    public QuitController() {
+        this.deck = Klondike.getDeck();
+        this.discard = Klondike.getDiscard();
+        this.foundations = Klondike.getFoundations();
+        this.piles = Klondike.getPiles();
     }
 
     @Override
