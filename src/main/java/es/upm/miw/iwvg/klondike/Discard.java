@@ -1,47 +1,20 @@
 package es.upm.miw.iwvg.klondike;
 
-import java.util.ArrayList;
-
-public class Discard {
-
-    private ArrayList<Card> cards;
+public class Discard extends CardList {
 
     public Discard() {
-        this.cards = new ArrayList<>();
-    }
-
-    public boolean isEmpty() {
-        return cards.isEmpty();
-    }
-
-    public void remove() {
-        this.cards = new ArrayList<>();
-    }
-
-    public Card getLastCard() {
-        int lastIndex = cards.size() - 1;
-        Card card = cards.get(lastIndex);
-        return card;
-    }
-
-    public void removeLastCard() {
-        int lastIndex = cards.size() - 1;
-        cards.remove(lastIndex);
-    }
-
-    public ArrayList<Card> getCards() {
-        return cards;
+        super();
     }
 
     @Override
     public String toString() {
-        if (cards.isEmpty()) {
+        if (super.cards.isEmpty()) {
             return "<vacío>";
         } else {
-            if (cards.size() <= 3) {
-                return cards.toString();
+            if (super.cards.size() <= 3) {
+                return super.cards.toString();
             } else {
-                return cards.subList(cards.size() - 4, cards.size() - 1).toString();
+                return super.cards.subList(super.cards.size() - 4, super.cards.size() - 1).toString();
 
             }
         }

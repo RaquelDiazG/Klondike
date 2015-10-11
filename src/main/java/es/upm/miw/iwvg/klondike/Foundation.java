@@ -1,47 +1,20 @@
 package es.upm.miw.iwvg.klondike;
 
-import java.util.ArrayList;
-
-public class Foundation {
+public class Foundation extends CardList {
 
     private Suit suit;
 
-    private ArrayList<Card> cards;
-
     public Foundation(Suit suit) {
+        super();
         this.suit = suit;
-        this.cards = new ArrayList<>();
-    }
-
-    public boolean isEmpty() {
-        return cards.isEmpty();
-    }
-
-    public void addCard(Card card) {
-        this.cards.add(card);
-    }
-
-    public Card getLastCard() {
-        int lastIndex = cards.size() - 1;
-        Card card = cards.get(lastIndex);
-        return card;
-    }
-
-    public void removeLastCard() {
-        int lastIndex = cards.size() - 1;
-        cards.remove(lastIndex);
-    }
-
-    public ArrayList<Card> getCards() {
-        return cards;
     }
 
     @Override
     public String toString() {
-        if (cards.isEmpty()) {
+        if (super.cards.isEmpty()) {
             return "<vacío>";
         }
-        return cards.get(cards.size() - 1).toString();
+        return super.cards.get(super.cards.size() - 1).toString();
     }
 
 }

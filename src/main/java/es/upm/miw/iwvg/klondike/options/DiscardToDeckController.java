@@ -16,7 +16,7 @@ public class DiscardToDeckController extends ControllerAbstract {
             io.writeln("¡ERROR! La baraja no está vacía");
         } else {
             deck.setCards(discard.getCards());
-            discard.remove();
+            discard.removeAll();
         }
 
     }
