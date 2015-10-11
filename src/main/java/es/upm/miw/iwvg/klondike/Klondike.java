@@ -32,13 +32,13 @@ public class Klondike {
         foundations.put(4, new Foundation(Suit.valueOf("B")));
 
         piles = new HashMap<>();
-        piles.put(1, new Pile(1, deck));
-        piles.put(2, new Pile(2, deck));
-        piles.put(3, new Pile(3, deck));
-        piles.put(4, new Pile(4, deck));
-        piles.put(5, new Pile(5, deck));
-        piles.put(6, new Pile(6, deck));
-        piles.put(7, new Pile(7, deck));
+        piles.put(1, new Pile(1));
+        piles.put(2, new Pile(2));
+        piles.put(3, new Pile(3));
+        piles.put(4, new Pile(4));
+        piles.put(5, new Pile(5));
+        piles.put(6, new Pile(6));
+        piles.put(7, new Pile(7));
 
         menuController = new MenuController();
         menuView = new MenuView(menuController);

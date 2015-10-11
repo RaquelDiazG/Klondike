@@ -8,14 +8,14 @@ public class Pile {
 
     private ArrayList<Card> cardsFaceUp;
 
-    public Pile(int position, Deck deck) {
+    public Pile(int position) {
         this.cardsFaceDown = new ArrayList<>();
         for (int i = 0; i < position - 1; i++) {
-            Card card = deck.getCard();
+            Card card = Klondike.getDeck().getCard();
             this.cardsFaceDown.add(card);
         }
         this.cardsFaceUp = new ArrayList<>();
-        Card card = deck.getCard();
+        Card card = Klondike.getDeck().getCard();
         this.cardsFaceUp.add(card);
     }
 
