@@ -7,14 +7,14 @@ import es.upm.miw.iwvg.klondike.Pile;
 
 public class DiscardToPileController extends ControllerAbstract {
 
-    private int numObjetivePile;
+    private int numPile;
 
     public DiscardToPileController() {
         super();
     }
 
-    public void setObjetivePile(int objetivePile) {
-        this.numObjetivePile = objetivePile;
+    public void setNumPile(int numPile) {
+        this.numPile = numPile;
     }
 
     @Override
@@ -22,10 +22,10 @@ public class DiscardToPileController extends ControllerAbstract {
         // recuperamos la ultima carta del descarte
         Card card = discard.getLastCard();
         // recuperamos la pila
-        Pile objetivePile = piles.get(numObjetivePile);
+        Pile objetivePile = piles.get(numPile);
         if (objetivePile.getCards().isEmpty()) { // pila vacia
             objetivePile.addCardFaceUp(card);
-            piles.put(numObjetivePile, objetivePile);
+            piles.put(numPile, objetivePile);
             discard.removeLastCard();
         } else {
             // recuperamos la ultima carta de la pila
@@ -33,7 +33,7 @@ public class DiscardToPileController extends ControllerAbstract {
             // comprobamos si encaja
             if (card.getCardValue().next() == cardPile.getCardValue()) {
                 objetivePile.addCardFaceUp(card);
-                piles.put(numObjetivePile, objetivePile);
+                piles.put(numPile, objetivePile);
                 discard.removeLastCard();
             } else {
                 IO io = new IO();

@@ -18,4 +18,5 @@ public abstract class ControllerAbstract implements ControllerInterface {
         this.foundations = Klondike.getFoundations();
         this.piles = Klondike.getPiles();
     }
+
 }

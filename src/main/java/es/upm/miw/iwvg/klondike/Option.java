@@ -67,7 +67,6 @@ public class Option {
             viewInterface = new QuitView(optionControllerInterface);
             break;
         }
-
     }
 
     public void control() {

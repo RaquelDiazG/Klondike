@@ -12,6 +12,7 @@ public class DeckToDiscardView implements ViewInterface {
         deckToDiscardController = (DeckToDiscardController) controller;
     }
 
+    @Override
     public void render() {
         deckToDiscardController.control();
     }

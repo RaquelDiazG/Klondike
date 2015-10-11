@@ -17,11 +17,11 @@ public class DiscardToPileView implements ViewInterface {
     @Override
     public void render() {
         IO io = new IO();
-        int pile = io.readInt("A qué escalera? [1-7]:");
-        if (pile > Klondike.getNumPiles()) {
+        int numPile = io.readInt("A qué escalera? [1-7]:");
+        if (numPile > Klondike.getNumPiles()) {
             io.writeln("¡ERROR! Escalera no válida");
         } else {
-            discardToPileController.setObjetivePile(pile);
+            discardToPileController.setNumPile(numPile);
             discardToPileController.control();
         }
     }

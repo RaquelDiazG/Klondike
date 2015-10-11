@@ -38,11 +38,11 @@ public class PileToPileController extends ControllerAbstract {
         }
     }
 
-    public void setPileOrigin(int numPileOrigin) {
+    public void setNumPileOrigin(int numPileOrigin) {
         this.numPileOrigin = numPileOrigin;
     }
 
-    public void setPileDestination(int numPileDestination) {
+    public void setNumPileDestination(int numPileDestination) {
         this.numPileDestination = numPileDestination;
     }
 
