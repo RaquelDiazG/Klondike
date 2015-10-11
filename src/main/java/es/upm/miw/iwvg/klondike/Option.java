@@ -21,14 +21,11 @@ import es.upm.miw.iwvg.klondike.views.QuitView;
 
 public class Option {
 
-    private int number;
-
     private ControllerInterface optionControllerInterface;
 
     private ViewInterface viewInterface;
 
     public Option(int option) {
-        number = option;
         switch (option) {
         case 1:
             optionControllerInterface = new DeckToDiscardController();

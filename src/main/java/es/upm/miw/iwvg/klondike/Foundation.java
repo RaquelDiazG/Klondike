@@ -2,11 +2,8 @@ package es.upm.miw.iwvg.klondike;
 
 public class Foundation extends CardList {
 
-    private Suit suit;
-
     public Foundation(Suit suit) {
         super();
-        this.suit = suit;
     }
 
     @Override
