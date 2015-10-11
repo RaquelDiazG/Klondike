@@ -26,19 +26,14 @@ public class Klondike {
         discard = new Discard();
 
         foundations = new HashMap<>();
-        foundations.put(1, new Foundation(Suit.valueOf("O")));
-        foundations.put(2, new Foundation(Suit.valueOf("C")));
-        foundations.put(3, new Foundation(Suit.valueOf("E")));
-        foundations.put(4, new Foundation(Suit.valueOf("B")));
+        for (Suit suit : Suit.values()) {
+            foundations.put(suit.position(), new Foundation(suit));
+        }
 
         piles = new HashMap<>();
-        piles.put(1, new Pile(1));
-        piles.put(2, new Pile(2));
-        piles.put(3, new Pile(3));
-        piles.put(4, new Pile(4));
-        piles.put(5, new Pile(5));
-        piles.put(6, new Pile(6));
-        piles.put(7, new Pile(7));
+        for (int i = 1; i <= NUM_PILES; i++) {
+            piles.put(i, new Pile(i));
+        }
 
         menuController = new MenuController();
         menuView = new MenuView(menuController);
