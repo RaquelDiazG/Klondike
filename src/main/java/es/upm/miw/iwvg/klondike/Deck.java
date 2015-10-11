@@ -1,6 +1,7 @@
 package es.upm.miw.iwvg.klondike;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Random;
 
 public class Deck {
@@ -8,15 +9,20 @@ public class Deck {
     private ArrayList<Card> cards;
 
     public Deck() {
-        this.cards = new ArrayList<Card>();
+        cards = new ArrayList<Card>();
         Suit[] suits = Suit.values();
         CardValue[] values = CardValue.values();
         for (CardValue cardValue : values) {
             for (Suit suit : suits) {
                 Card card = new Card(cardValue, suit);
-                this.cards.add(card);
+                cards.add(card);
             }
         }
+        Collections.shuffle(cards);
+    }
+
+    public boolean isEmpty() {
+        return cards.isEmpty();
     }
 
     public void end() {
@@ -27,7 +33,7 @@ public class Deck {
         return cards;
     }
 
-    public Card getCard() {
+    public Card getRandomCard() {
         int random = new Random().nextInt(cards.size() - 1);
         Card card = cards.get(random);
         cards.remove(random);

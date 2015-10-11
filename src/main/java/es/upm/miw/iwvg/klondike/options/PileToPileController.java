@@ -5,6 +5,7 @@ import java.util.List;
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
+import es.upm.miw.iwvg.klondike.Pile;
 
 public class PileToPileController extends ControllerAbstract {
 
@@ -20,21 +21,18 @@ public class PileToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
-        // recuperamos las cartas de la pila de origen
-        int size = piles.get(numPileOrigin).getCardsFaceUp().size();
-        List<Card> cardsOrigin = piles.get(numPileOrigin).getCardsFaceUp().subList(size - numCards, size);
+        Pile pileOrigin = piles.get(numPileOrigin);
+        int size = pileOrigin.getCardsFaceUp().size();
+        List<Card> cardsOrigin = pileOrigin.getCardsFaceUp().subList(size - numCards, size);
         Card firstCardOrigin = cardsOrigin.get(0);
-        // recuperamos la ultima carta de la pila de destino
-        Card cardDestination = piles.get(numPileDestination).getLastCardFaceUp();
-        // comprobamos si encaja
+        Pile pileDestination = piles.get(numPileDestination);
+        Card cardDestination = pileDestination.getLastCardFaceUp();
         if (firstCardOrigin.getCardValue().next() == cardDestination.getCardValue()) {
-            // añadimos las cartas a la pila de destino
-            piles.get(numPileDestination).getCardsFaceUp().addAll(cardsOrigin);
-            // borramos las cartas de la pila de origen
-            piles.get(numPileOrigin).getCardsFaceUp().removeAll(cardsOrigin);
+            pileDestination.getCardsFaceUp().addAll(cardsOrigin);
+            pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
         } else {
             IO io = new IO();
-            io.writeln("ERROR! No se puede mover a la escalera");
+            io.writeln("ERROR! No se puede mover " + cardsOrigin + " a " + cardDestination);
         }
     }
 

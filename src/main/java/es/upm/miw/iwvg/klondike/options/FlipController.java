@@ -14,13 +14,13 @@ public class FlipController extends ControllerAbstract {
 
     @Override
     public void control() {
-        // recuperamos la pila
-        Pile objetivePile = piles.get(numObjetivePile);
-        // comprobamos que la pila no tiene cartas boca arriba
-        if (objetivePile.getCardsFaceUp().isEmpty()) {
-            objetivePile.flip();
+        IO io = new IO();
+        Pile pile = piles.get(numObjetivePile);
+        if (pile.isEmpty()) {
+            io.writeln("¡ERROR! No se puede voltear en una escalera vacía");
+        } else if (pile.getCardsFaceUp().isEmpty()) {
+            pile.flip();
         } else {
-            IO io = new IO();
             io.writeln("¡ERROR! No se puede voltear en una escalera con cartas");
         }
     }

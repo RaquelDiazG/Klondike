@@ -13,6 +13,10 @@ public class Foundation {
         this.cards = new ArrayList<>();
     }
 
+    public boolean isEmpty() {
+        return cards.isEmpty();
+    }
+
     public void addCard(Card card) {
         this.cards.add(card);
     }

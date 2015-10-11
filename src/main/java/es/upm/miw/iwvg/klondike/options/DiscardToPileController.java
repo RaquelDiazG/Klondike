@@ -19,25 +19,19 @@ public class DiscardToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
-        // recuperamos la ultima carta del descarte
-        Card card = discard.getLastCard();
-        // recuperamos la pila
-        Pile objetivePile = piles.get(numPile);
-        if (objetivePile.getCards().isEmpty()) { // pila vacia
-            objetivePile.addCardFaceUp(card);
-            piles.put(numPile, objetivePile);
+        Card cardDiscard = discard.getLastCard();
+        Pile pile = piles.get(numPile);
+        if (pile.isEmpty()) {
+            pile.addCardFaceUp(cardDiscard);
             discard.removeLastCard();
         } else {
-            // recuperamos la ultima carta de la pila
-            Card cardPile = objetivePile.getLastCardFaceUp();
-            // comprobamos si encaja
-            if (card.getCardValue().next() == cardPile.getCardValue()) {
-                objetivePile.addCardFaceUp(card);
-                piles.put(numPile, objetivePile);
+            Card cardPile = pile.getLastCardFaceUp();
+            if (cardDiscard.getCardValue().next() == cardPile.getCardValue()) {
+                pile.addCardFaceUp(cardDiscard);
                 discard.removeLastCard();
             } else {
                 IO io = new IO();
-                io.writeln("¡ERROR! No se puede poner " + card + " sobre " + cardPile);
+                io.writeln("¡ERROR! No se puede poner " + cardDiscard + " sobre " + cardPile);
             }
         }
     }

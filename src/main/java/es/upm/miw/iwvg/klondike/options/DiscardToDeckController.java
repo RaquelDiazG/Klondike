@@ -11,10 +11,9 @@ public class DiscardToDeckController extends ControllerAbstract {
 
     @Override
     public void control() {
-        System.out.println("Controlador - Mover de descarte a baraja");
-        IO io = new IO();
-        if (!deck.getCards().isEmpty()) {
-            io.writeln("¡ERROR! NO SE PUEDE MOVER DE DESCARTE A BARAJA PORQUE LA BARAJA NO ESTÁ VACÍA");
+        if (!deck.isEmpty()) {
+            IO io = new IO();
+            io.writeln("¡ERROR! La baraja no está vacía");
         } else {
             deck.setCards(discard.getCards());
             discard.remove();

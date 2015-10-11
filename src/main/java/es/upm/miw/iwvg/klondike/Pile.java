@@ -11,11 +11,11 @@ public class Pile {
     public Pile(int position) {
         this.cardsFaceDown = new ArrayList<>();
         for (int i = 0; i < position - 1; i++) {
-            Card card = Klondike.getDeck().getCard();
+            Card card = Klondike.getDeck().getRandomCard();
             this.cardsFaceDown.add(card);
         }
         this.cardsFaceUp = new ArrayList<>();
-        Card card = Klondike.getDeck().getCard();
+        Card card = Klondike.getDeck().getRandomCard();
         this.cardsFaceUp.add(card);
     }
 
@@ -50,6 +50,10 @@ public class Pile {
         allCards.addAll(cardsFaceUp);
         allCards.addAll(cardsFaceDown);
         return allCards;
+    }
+
+    public boolean isEmpty() {
+        return this.getCards().isEmpty();
     }
 
     public void flip() {

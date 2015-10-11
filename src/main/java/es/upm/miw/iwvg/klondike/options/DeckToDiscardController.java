@@ -14,13 +14,12 @@ public class DeckToDiscardController extends ControllerAbstract {
 
     @Override
     public void control() {
-        System.out.println("Controlador - Mover de baraja a descarte");
         IO io = new IO();
-        if (deck.getCards().isEmpty()) {
-            io.writeln("¡ERROR! NO SE PUEDE MOVER DE BARAJA A DESCARTE PORQUE LA BARAJA ESTÁ VACÍA");
+        if (deck.isEmpty()) {
+            io.writeln("¡ERROR!La baraja está vacía");
         } else {
             int count = 0;
-            while (count < MAX_CARDS_DISCARD && !deck.getCards().isEmpty()) {
+            while (count < MAX_CARDS_DISCARD && !deck.isEmpty()) {
                 Card card = deck.getCards().get(0);
                 deck.getCards().remove(0);
                 discard.getCards().add(card);

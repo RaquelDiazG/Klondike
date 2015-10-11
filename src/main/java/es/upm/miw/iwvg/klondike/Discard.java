@@ -10,6 +10,10 @@ public class Discard {
         this.cards = new ArrayList<>();
     }
 
+    public boolean isEmpty() {
+        return cards.isEmpty();
+    }
+
     public void remove() {
         this.cards = new ArrayList<>();
     }
@@ -37,7 +41,6 @@ public class Discard {
             if (cards.size() <= 3) {
                 return cards.toString();
             } else {
-                System.out.println(cards.size());
                 return cards.subList(cards.size() - 4, cards.size() - 1).toString();
 
             }
