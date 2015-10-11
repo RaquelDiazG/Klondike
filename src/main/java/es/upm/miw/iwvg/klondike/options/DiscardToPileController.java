@@ -31,7 +31,7 @@ public class DiscardToPileController extends ControllerAbstract {
             // recuperamos la ultima carta de la pila
             Card cardPile = objetivePile.getLastCardFaceUp();
             // comprobamos si encaja
-            if (card.getCardValue() == cardPile.getCardValue().previous()) {
+            if (card.getCardValue().next() == cardPile.getCardValue()) {
                 objetivePile.addCardFaceUp(card);
                 piles.put(numObjetivePile, objetivePile);
                 discard.removeLastCard();

@@ -27,7 +27,7 @@ public class PileToPileController extends ControllerAbstract {
         // recuperamos la ultima carta de la pila de destino
         Card cardDestination = piles.get(numPileDestination).getLastCardFaceUp();
         // comprobamos si encaja
-        if (firstCardOrigin.getCardValue() == cardDestination.getCardValue().previous()) {
+        if (firstCardOrigin.getCardValue().next() == cardDestination.getCardValue()) {
             // añadimos las cartas a la pila de destino
             piles.get(numPileDestination).getCardsFaceUp().addAll(cardsOrigin);
             // borramos las cartas de la pila de origen

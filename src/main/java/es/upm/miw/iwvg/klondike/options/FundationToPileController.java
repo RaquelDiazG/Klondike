@@ -32,7 +32,7 @@ public class FundationToPileController extends ControllerAbstract {
             // recuperamos la ultima carta de la pila
             Card cardPile = objetivePile.getLastCardFaceUp();
             // comprobamos si encaja
-            if (cardFoundation.getCardValue() == cardPile.getCardValue().previous()) {
+            if (cardFoundation.getCardValue().next() == cardPile.getCardValue()) {
                 objetivePile.addCardFaceUp(cardFoundation);
                 foundations.get(numFoundation).removeLastCard();
             } else {
