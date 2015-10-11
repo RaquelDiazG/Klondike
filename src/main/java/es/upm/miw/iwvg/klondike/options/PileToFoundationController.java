@@ -3,6 +3,7 @@ package es.upm.miw.iwvg.klondike.options;
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
+import es.upm.miw.iwvg.klondike.Foundation;
 import es.upm.miw.iwvg.klondike.IO;
 
 public class PileToFoundationController extends ControllerAbstract {
@@ -18,11 +19,15 @@ public class PileToFoundationController extends ControllerAbstract {
         IO io = new IO();
         // recuperamos la ultima carta de la pila
         Card cardPile = piles.get(numPile).getLastCardFaceUp();
+        // recuperamos el numero del palo
+        int positionPile = cardPile.getSuit().position();
+        // recuperamos el palo
+        Foundation foundation = foundations.get(positionPile);
         // recuperamos las cartas del palo
-        if (foundations.get(cardPile.getSuit()).getCards().isEmpty()) {// vacio
+        if (foundation.getCards().isEmpty()) {// vacio
             if (cardPile.getCardValue() == CardValue.AS) {
                 // añadimos la carta al palo
-                foundations.get(cardPile.getSuit()).addCard(cardPile);
+                foundation.addCard(cardPile);
                 // eliminamos la carta de la pila
                 piles.get(numPile).removeLastCardFaceUp();
             } else {
@@ -30,11 +35,11 @@ public class PileToFoundationController extends ControllerAbstract {
             }
         } else {
             // recuperamos la ultima carta del palo
-            Card cardFoundation = foundations.get(cardPile.getSuit()).getLastCard();
+            Card cardFoundation = foundation.getLastCard();
             // comprobamos si encaja
-            if (cardPile.getCardValue() == cardFoundation.getCardValue().previous()) {
+            if (cardPile.getCardValue() == cardFoundation.getCardValue().next()) {
                 // añadimos la carta al palo
-                foundations.get(cardPile.getSuit()).addCard(cardPile);
+                foundation.addCard(cardPile);
                 // eliminamos la carta de la pila
                 piles.get(numPile).removeLastCardFaceUp();
             } else {

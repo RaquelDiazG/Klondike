@@ -16,13 +16,13 @@ public class MenuView {
         io.write("Descarte:");
         io.writeln(Klondike.getDiscard().toString());
         io.write("Palo oros:");
-        io.writeln(Klondike.getFoundation(Suit.O).toString());
+        io.writeln(Klondike.getFoundation(1).toString());
         io.write("Palo copas:");
-        io.writeln(Klondike.getFoundation(Suit.C).toString());
+        io.writeln(Klondike.getFoundation(2).toString());
         io.write("Palo espadas:");
-        io.writeln(Klondike.getFoundation(Suit.E).toString());
+        io.writeln(Klondike.getFoundation(3).toString());
         io.write("Palo bastos:");
-        io.writeln(Klondike.getFoundation(Suit.B).toString());
+        io.writeln(Klondike.getFoundation(4).toString());
         io.write("Escalera 1:");
         io.writeln(Klondike.getPile(1).toString());
         io.write("Escalera 2:");

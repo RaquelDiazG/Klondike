@@ -4,7 +4,6 @@ import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Pile;
-import es.upm.miw.iwvg.klondike.Suit;
 
 public class FundationToPileController extends ControllerAbstract {
 
@@ -19,21 +18,23 @@ public class FundationToPileController extends ControllerAbstract {
     @Override
     public void control() {
         // recuperamos la ultima carta del palo
-        Suit suit = Suit.getValue(numFoundation - 1);
-        Card cardFoundation = foundations.get(suit).getLastCard();
+        Card cardFoundation = foundations.get(numFoundation).getLastCard();
         // recuperamos la pila
         Pile objetivePile = piles.get(numPile);
         if (objetivePile.getCards().isEmpty()) { // pila vacia
             objetivePile.addCardFaceUp(cardFoundation);
             piles.put(numPile, objetivePile);
-            foundations.get(suit).removeLastCard();
+            foundations.get(numFoundation).removeLastCard();
+        } else if (objetivePile.getCards().isEmpty() || objetivePile.getCardsFaceUp().isEmpty()) {
+            IO io = new IO();
+            io.writeln("¡ERROR! Es necesario voltear la carta de la escalera");
         } else {
             // recuperamos la ultima carta de la pila
             Card cardPile = objetivePile.getLastCardFaceUp();
             // comprobamos si encaja
             if (cardFoundation.getCardValue() == cardPile.getCardValue().previous()) {
                 objetivePile.addCardFaceUp(cardFoundation);
-                foundations.get(suit).removeLastCard();
+                foundations.get(numFoundation).removeLastCard();
             } else {
                 IO io = new IO();
                 io.writeln("¡ERROR! No se puede poner " + cardFoundation + " sobre " + cardPile);

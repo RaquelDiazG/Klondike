@@ -8,7 +8,7 @@ public abstract class ControllerAbstract implements ControllerInterface {
 
     protected Discard discard;
 
-    protected Map<Suit, Foundation> foundations;
+    protected Map<Integer, Foundation> foundations;
 
     protected Map<Integer, Pile> piles;
 

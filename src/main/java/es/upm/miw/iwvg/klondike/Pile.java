@@ -4,8 +4,6 @@ import java.util.ArrayList;
 
 public class Pile {
 
-    private int position;
-
     private ArrayList<Card> cardsFaceDown;
 
     private ArrayList<Card> cardsFaceUp;
@@ -19,7 +17,6 @@ public class Pile {
         this.cardsFaceUp = new ArrayList<>();
         Card card = deck.getCard();
         this.cardsFaceUp.add(card);
-        this.position = position;
     }
 
     public void addCardFaceUp(Card card) {
@@ -46,14 +43,6 @@ public class Pile {
     public void removeLastCardFaceDown() {
         int lastIndex = cardsFaceDown.size() - 1;
         cardsFaceDown.remove(lastIndex);
-    }
-
-    public int getPosition() {
-        return position;
-    }
-
-    public void setPosition(int position) {
-        this.position = position;
     }
 
     public ArrayList<Card> getCards() {
@@ -83,7 +72,7 @@ public class Pile {
 
     @Override
     public String toString() {
-        if (cardsFaceDown.isEmpty()) {
+        if (cardsFaceDown.isEmpty() && cardsFaceUp.isEmpty()) {
             return "<vacío>";
         } else {
             String stringPileDown = "";

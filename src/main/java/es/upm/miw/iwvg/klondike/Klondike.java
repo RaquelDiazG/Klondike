@@ -9,13 +9,13 @@ public class Klondike {
 
     private static Discard discard; // SINGLETON PATTERN
 
-    private static Map<Suit, Foundation> foundations;// SINGLETON PATTERN
+    private static Map<Integer, Foundation> foundations;// SINGLETON PATTERN
 
     private static Map<Integer, Pile> piles;// SINGLETON PATTERN
 
-    private static final int NUM_FOUNDATIONS = 7;// SINGLETON PATTERN
+    private static final int NUM_PILES = 7;// SINGLETON PATTERN
 
-    private static final int NUM_PILES = 4;// SINGLETON PATTERN
+    private static final int NUM_FOUNDATIONS = 4;// SINGLETON PATTERN
 
     private MenuView menuView;
 
@@ -26,10 +26,10 @@ public class Klondike {
         discard = new Discard();
 
         foundations = new HashMap<>();
-        foundations.put(Suit.valueOf("O"), new Foundation(Suit.valueOf("O")));
-        foundations.put(Suit.valueOf("C"), new Foundation(Suit.valueOf("C")));
-        foundations.put(Suit.valueOf("E"), new Foundation(Suit.valueOf("E")));
-        foundations.put(Suit.valueOf("B"), new Foundation(Suit.valueOf("B")));
+        foundations.put(1, new Foundation(Suit.valueOf("O")));
+        foundations.put(2, new Foundation(Suit.valueOf("C")));
+        foundations.put(3, new Foundation(Suit.valueOf("E")));
+        foundations.put(4, new Foundation(Suit.valueOf("B")));
 
         piles = new HashMap<>();
         piles.put(1, new Pile(1, deck));
@@ -54,8 +54,8 @@ public class Klondike {
 
     // ACCESS TO SINGLETON PATTERN
 
-    public static Foundation getFoundation(Suit suit) {
-        return foundations.get(suit);
+    public static Foundation getFoundation(int position) {
+        return foundations.get(position);
     }
 
     public static Pile getPile(int position) {
@@ -70,7 +70,7 @@ public class Klondike {
         return discard;
     }
 
-    public static Map<Suit, Foundation> getFoundations() {
+    public static Map<Integer, Foundation> getFoundations() {
         return foundations;
     }
 
