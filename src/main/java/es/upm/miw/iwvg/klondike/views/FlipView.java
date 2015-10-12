@@ -4,7 +4,7 @@ import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
-import es.upm.miw.iwvg.klondike.options.FlipController;
+import es.upm.miw.iwvg.klondike.controllers.FlipController;
 
 public class FlipView implements ViewInterface {
 

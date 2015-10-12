@@ -4,7 +4,7 @@ import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Klondike;
 import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
-import es.upm.miw.iwvg.klondike.options.FundationToPileController;
+import es.upm.miw.iwvg.klondike.controllers.FundationToPileController;
 
 public class FoundationToPileView implements ViewInterface {
 

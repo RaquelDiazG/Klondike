@@ -1,14 +1,14 @@
 package es.upm.miw.iwvg.klondike;
 
-import es.upm.miw.iwvg.klondike.options.DeckToDiscardController;
-import es.upm.miw.iwvg.klondike.options.DiscardToDeckController;
-import es.upm.miw.iwvg.klondike.options.DiscardToFoundationController;
-import es.upm.miw.iwvg.klondike.options.DiscardToPileController;
-import es.upm.miw.iwvg.klondike.options.FlipController;
-import es.upm.miw.iwvg.klondike.options.FundationToPileController;
-import es.upm.miw.iwvg.klondike.options.PileToFoundationController;
-import es.upm.miw.iwvg.klondike.options.PileToPileController;
-import es.upm.miw.iwvg.klondike.options.QuitController;
+import es.upm.miw.iwvg.klondike.controllers.DeckToDiscardController;
+import es.upm.miw.iwvg.klondike.controllers.DiscardToDeckController;
+import es.upm.miw.iwvg.klondike.controllers.DiscardToFoundationController;
+import es.upm.miw.iwvg.klondike.controllers.DiscardToPileController;
+import es.upm.miw.iwvg.klondike.controllers.FlipController;
+import es.upm.miw.iwvg.klondike.controllers.FundationToPileController;
+import es.upm.miw.iwvg.klondike.controllers.PileToFoundationController;
+import es.upm.miw.iwvg.klondike.controllers.PileToPileController;
+import es.upm.miw.iwvg.klondike.controllers.QuitController;
 import es.upm.miw.iwvg.klondike.views.DeckToDiscardView;
 import es.upm.miw.iwvg.klondike.views.DiscardToDeckView;
 import es.upm.miw.iwvg.klondike.views.DiscardToFoundationView;

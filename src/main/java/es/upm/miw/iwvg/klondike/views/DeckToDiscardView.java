@@ -2,7 +2,7 @@ package es.upm.miw.iwvg.klondike.views;
 
 import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
-import es.upm.miw.iwvg.klondike.options.DeckToDiscardController;
+import es.upm.miw.iwvg.klondike.controllers.DeckToDiscardController;
 
 public class DeckToDiscardView implements ViewInterface {
 

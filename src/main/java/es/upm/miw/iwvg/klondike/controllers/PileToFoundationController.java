@@ -1,4 +1,4 @@
-package es.upm.miw.iwvg.klondike.options;
+package es.upm.miw.iwvg.klondike.controllers;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
@@ -19,6 +19,8 @@ public class PileToFoundationController extends ControllerAbstract {
         Pile pile = piles.get(numPile);
         if (pile.isEmpty()) {
             io.writeln("¡ERROR! No hay cartas en la escalera para mover");
+        } else if (pile.getCardsFaceUp().isEmpty()) {
+            io.writeln("¡ERROR! Es necesario voltear la carta de la escalera");
         } else {
             Card cardPile = pile.getLastCardFaceUp();
             int numPile = cardPile.getSuit().position();

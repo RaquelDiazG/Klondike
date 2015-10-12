@@ -1,4 +1,4 @@
-package es.upm.miw.iwvg.klondike.options;
+package es.upm.miw.iwvg.klondike.controllers;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;

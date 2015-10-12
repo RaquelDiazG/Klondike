@@ -3,7 +3,7 @@ package es.upm.miw.iwvg.klondike.views;
 import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.ControllerInterface;
 import es.upm.miw.iwvg.klondike.ViewInterface;
-import es.upm.miw.iwvg.klondike.options.QuitController;
+import es.upm.miw.iwvg.klondike.controllers.QuitController;
 
 public class QuitView implements ViewInterface {
 
