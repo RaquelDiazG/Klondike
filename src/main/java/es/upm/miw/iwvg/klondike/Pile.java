@@ -9,6 +9,11 @@ public class Pile {
 
     private List<Card> cardsFaceUp;
 
+    public Pile() { // Created to test
+        this.cardsFaceDown = new ArrayList<>();
+        this.cardsFaceUp = new ArrayList<>();
+    }
+
     public Pile(int position) {
         this.cardsFaceDown = new ArrayList<>();
         for (int i = 0; i < position - 1; i++) {
@@ -69,6 +74,14 @@ public class Pile {
 
     public List<Card> getCardsFaceDown() {
         return cardsFaceDown;
+    }
+
+    public void setCardsFaceDown(List<Card> cardsFaceDown) {
+        this.cardsFaceDown = cardsFaceDown;
+    }
+
+    public void setCardsFaceUp(List<Card> cardsFaceUp) {
+        this.cardsFaceUp = cardsFaceUp;
     }
 
     @Override
