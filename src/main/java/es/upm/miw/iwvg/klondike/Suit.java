@@ -2,19 +2,19 @@ package es.upm.miw.iwvg.klondike;
 
 public enum Suit {
 
-    O('o'), C('c'), E('e'), B('b');
+    O("o"), C("c"), E("e"), B("b");
 
-    private char value;
+    private String value;
 
-    private Suit(char value) {
+    private Suit(String value) {
         this.value = value;
     }
 
-    public char getValue() {
+    public String getValue() {
         return value;
     }
 
-    public Integer position() {
+    public int position() {
         return this.ordinal() + 1;
     }
 }
