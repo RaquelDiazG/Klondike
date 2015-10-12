@@ -21,7 +21,7 @@ public class Card {
 
     @Override
     public String toString() {
-        return "[" + value.getValue() + ", " + suit.getValue() + "]";
+        return "[" + value.getValue() + "," + suit.getValue() + "]";
     }
 
 }
