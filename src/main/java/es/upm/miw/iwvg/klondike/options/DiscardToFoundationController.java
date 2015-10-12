@@ -30,7 +30,7 @@ public class DiscardToFoundationController extends ControllerAbstract {
                 }
             } else {
                 Card cardFoundation = foundation.getLastCard();
-                if (cardDiscard.getCardValue() == cardFoundation.getCardValue().next()) {
+                if (cardDiscard.isNextCardValue(cardFoundation)) {
                     foundation.addCard(cardDiscard);
                     discard.removeLastCard();
                 } else {

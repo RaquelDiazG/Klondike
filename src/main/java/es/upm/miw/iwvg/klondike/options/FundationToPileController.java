@@ -32,7 +32,7 @@ public class FundationToPileController extends ControllerAbstract {
                 io.writeln("¡ERROR! Es necesario voltear la carta de la escalera");
             } else {
                 Card cardPile = pile.getLastCardFaceUp();
-                if (cardFoundation.getCardValue().next() == cardPile.getCardValue()) {
+                if (cardPile.isNextCardValue(cardFoundation)) {
                     pile.addCardFaceUp(cardFoundation);
                     foundation.removeLastCard();
                 } else {

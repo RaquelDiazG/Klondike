@@ -34,7 +34,7 @@ public class PileToFoundationController extends ControllerAbstract {
                 }
             } else {
                 Card cardFoundation = foundation.getLastCard();
-                if (cardPile.getCardValue() == cardFoundation.getCardValue().next()) {
+                if (cardPile.isNextCardValue(cardFoundation)) {
                     foundation.addCard(cardPile);
                     pile.removeLastCardFaceUp();
                 } else {

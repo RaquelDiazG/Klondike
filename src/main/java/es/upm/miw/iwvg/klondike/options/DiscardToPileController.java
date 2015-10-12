@@ -30,7 +30,7 @@ public class DiscardToPileController extends ControllerAbstract {
                 discard.removeLastCard();
             } else {
                 Card cardPile = pile.getLastCardFaceUp();
-                if (cardDiscard.getCardValue().next() == cardPile.getCardValue()) {
+                if (cardPile.isNextCardValue(cardDiscard)) {
                     pile.addCardFaceUp(cardDiscard);
                     discard.removeLastCard();
                 } else {

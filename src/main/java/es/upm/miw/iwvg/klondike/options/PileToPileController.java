@@ -35,7 +35,7 @@ public class PileToPileController extends ControllerAbstract {
                 pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
             } else {
                 Card cardDestination = pileDestination.getLastCardFaceUp();
-                if (firstCardOrigin.getCardValue().next() == cardDestination.getCardValue()) {
+                if (cardDestination.isNextCardValue(firstCardOrigin)) {
                     pileDestination.getCardsFaceUp().addAll(cardsOrigin);
                     pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
                 } else {

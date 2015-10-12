@@ -11,6 +11,10 @@ public class Card {
         this.suit = suit;
     }
 
+    public boolean isNextCardValue(Card card) {
+        return (value == card.getCardValue().next());
+    }
+
     public CardValue getCardValue() {
         return value;
     }
