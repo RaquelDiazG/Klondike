@@ -51,7 +51,7 @@ public class Pile {
         cardsFaceDown.remove(lastIndex);
     }
 
-    public List<Card> getCards() {
+    public List<Card> getAllCards() {
         List<Card> allCards = new ArrayList<Card>();
         allCards.addAll(cardsFaceUp);
         allCards.addAll(cardsFaceDown);
@@ -59,7 +59,7 @@ public class Pile {
     }
 
     public boolean isEmpty() {
-        return this.getCards().isEmpty();
+        return this.getAllCards().isEmpty();
     }
 
     public void flip() {

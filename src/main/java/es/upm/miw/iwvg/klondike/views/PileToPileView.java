@@ -22,7 +22,7 @@ public class PileToPileView implements ViewInterface {
         int numPileDestination = io.readInt("A qué escalera? [1-9]:");
         if (numPileOrigin > Klondike.getNumPiles()) {
             io.writeln("¡ERROR! Escalera de origen no válida");
-        } else if (numCards > Klondike.getPiles().get(numPileOrigin).getCards().size()) {
+        } else if (numCards > Klondike.getPiles().get(numPileOrigin).getAllCards().size()) {
             io.writeln("¡ERROR! No se pueden elegir más cartas de las que hay en la escalera");
         } else if (numPileDestination > Klondike.getNumPiles()) {
             io.writeln("¡ERROR! Escalera de destino no válida");

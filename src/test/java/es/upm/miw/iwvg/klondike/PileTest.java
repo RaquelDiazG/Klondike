@@ -76,12 +76,12 @@ public class PileTest {
     }
 
     @Test
-    public void getCardsTest() {
-        assertEquals(7, pile.getCards().size());
+    public void getAllCardsTest() {
+        assertEquals(7, pile.getAllCards().size());
         pile.removeLastCardFaceDown();
-        assertEquals(6, pile.getCards().size());
+        assertEquals(6, pile.getAllCards().size());
         pile.removeLastCardFaceUp();
-        assertEquals(5, pile.getCards().size());
+        assertEquals(5, pile.getAllCards().size());
     }
 
     @Test
