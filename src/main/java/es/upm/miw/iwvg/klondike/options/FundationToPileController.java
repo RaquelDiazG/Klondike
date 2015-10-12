@@ -3,7 +3,6 @@ package es.upm.miw.iwvg.klondike.options;
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.Foundation;
-import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Pile;
 
 public class FundationToPileController extends ControllerAbstract {
@@ -18,7 +17,6 @@ public class FundationToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
-        IO io = new IO();
         Foundation foundation = foundations.get(numFoundation);
         if (foundation.isEmpty()) {
             io.writeln("¡ERROR! No hay cartas en el palo para mover");

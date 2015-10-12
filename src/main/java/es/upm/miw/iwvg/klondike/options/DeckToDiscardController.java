@@ -2,7 +2,6 @@ package es.upm.miw.iwvg.klondike.options;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
-import es.upm.miw.iwvg.klondike.IO;
 
 public class DeckToDiscardController extends ControllerAbstract {
 
@@ -14,7 +13,6 @@ public class DeckToDiscardController extends ControllerAbstract {
 
     @Override
     public void control() {
-        IO io = new IO();
         if (deck.isEmpty()) {
             io.writeln("¡ERROR!La baraja está vacía");
         } else {

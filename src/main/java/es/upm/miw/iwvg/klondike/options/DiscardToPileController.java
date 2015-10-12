@@ -2,7 +2,6 @@ package es.upm.miw.iwvg.klondike.options;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
-import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Pile;
 
 public class DiscardToPileController extends ControllerAbstract {
@@ -19,7 +18,6 @@ public class DiscardToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
-        IO io = new IO();
         if (discard.isEmpty()) {
             io.writeln("¡ERROR! No hay cartas en el descarte para colocar");
         } else {

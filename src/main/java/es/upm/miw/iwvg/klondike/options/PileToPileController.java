@@ -4,7 +4,6 @@ import java.util.List;
 
 import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
-import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Pile;
 
 public class PileToPileController extends ControllerAbstract {
@@ -21,7 +20,6 @@ public class PileToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
-        IO io = new IO();
         Pile pileOrigin = piles.get(numPileOrigin);
         if (pileOrigin.isEmpty()) {
             io.writeln("¡ERROR! No hay cartas en la escalera de origen " + numPileOrigin + " para mover");

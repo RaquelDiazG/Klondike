@@ -12,11 +12,14 @@ public abstract class ControllerAbstract implements ControllerInterface {
 
     protected Map<Integer, Pile> piles;
 
+    protected IO io;
+
     public ControllerAbstract() {
         this.deck = Klondike.getDeck();
         this.discard = Klondike.getDiscard();
         this.foundations = Klondike.getFoundations();
         this.piles = Klondike.getPiles();
+        this.io = new IO();
     }
 
 }

@@ -4,7 +4,6 @@ import es.upm.miw.iwvg.klondike.Card;
 import es.upm.miw.iwvg.klondike.CardValue;
 import es.upm.miw.iwvg.klondike.ControllerAbstract;
 import es.upm.miw.iwvg.klondike.Foundation;
-import es.upm.miw.iwvg.klondike.IO;
 import es.upm.miw.iwvg.klondike.Pile;
 
 public class PileToFoundationController extends ControllerAbstract {
@@ -17,7 +16,6 @@ public class PileToFoundationController extends ControllerAbstract {
 
     @Override
     public void control() {
-        IO io = new IO();
         Pile pile = piles.get(numPile);
         if (pile.isEmpty()) {
             io.writeln("¡ERROR! No hay cartas en la escalera para mover");
