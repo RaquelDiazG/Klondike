@@ -21,18 +21,27 @@ public class PileToPileController extends ControllerAbstract {
 
     @Override
     public void control() {
+        IO io = new IO();
         Pile pileOrigin = piles.get(numPileOrigin);
-        int size = pileOrigin.getCardsFaceUp().size();
-        List<Card> cardsOrigin = pileOrigin.getCardsFaceUp().subList(size - numCards, size);
-        Card firstCardOrigin = cardsOrigin.get(0);
-        Pile pileDestination = piles.get(numPileDestination);
-        Card cardDestination = pileDestination.getLastCardFaceUp();
-        if (firstCardOrigin.getCardValue().next() == cardDestination.getCardValue()) {
-            pileDestination.getCardsFaceUp().addAll(cardsOrigin);
-            pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
+        if (pileOrigin.isEmpty()) {
+            io.writeln("¡ERROR! No hay cartas en la escalera de origen " + numPileOrigin + " para mover");
         } else {
-            IO io = new IO();
-            io.writeln("ERROR! No se puede mover " + cardsOrigin + " a " + cardDestination);
+            int size = pileOrigin.getCardsFaceUp().size();
+            List<Card> cardsOrigin = pileOrigin.getCardsFaceUp().subList(size - numCards, size);
+            Card firstCardOrigin = cardsOrigin.get(0);
+            Pile pileDestination = piles.get(numPileDestination);
+            if (pileDestination.isEmpty()) {
+                pileDestination.getCardsFaceUp().addAll(cardsOrigin);
+                pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
+            } else {
+                Card cardDestination = pileDestination.getLastCardFaceUp();
+                if (firstCardOrigin.getCardValue().next() == cardDestination.getCardValue()) {
+                    pileDestination.getCardsFaceUp().addAll(cardsOrigin);
+                    pileOrigin.getCardsFaceUp().removeAll(cardsOrigin);
+                } else {
+                    io.writeln("ERROR! No se puede mover " + cardsOrigin + " a " + cardDestination);
+                }
+            }
         }
     }
 

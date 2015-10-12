@@ -20,20 +20,24 @@ public class FundationToPileController extends ControllerAbstract {
     public void control() {
         IO io = new IO();
         Foundation foundation = foundations.get(numFoundation);
-        Card cardFoundation = foundation.getLastCard();
-        Pile pile = piles.get(numPile);
-        if (pile.isEmpty()) {
-            pile.addCardFaceUp(cardFoundation);
-            foundation.removeLastCard();
-        } else if (pile.getCardsFaceUp().isEmpty()) {
-            io.writeln("¡ERROR! Es necesario voltear la carta de la escalera");
+        if (foundation.isEmpty()) {
+            io.writeln("¡ERROR! No hay cartas en el palo para mover");
         } else {
-            Card cardPile = pile.getLastCardFaceUp();
-            if (cardFoundation.getCardValue().next() == cardPile.getCardValue()) {
+            Card cardFoundation = foundation.getLastCard();
+            Pile pile = piles.get(numPile);
+            if (pile.isEmpty()) {
                 pile.addCardFaceUp(cardFoundation);
                 foundation.removeLastCard();
+            } else if (pile.getCardsFaceUp().isEmpty()) {
+                io.writeln("¡ERROR! Es necesario voltear la carta de la escalera");
             } else {
-                io.writeln("¡ERROR! No se puede poner " + cardFoundation + " sobre " + cardPile);
+                Card cardPile = pile.getLastCardFaceUp();
+                if (cardFoundation.getCardValue().next() == cardPile.getCardValue()) {
+                    pile.addCardFaceUp(cardFoundation);
+                    foundation.removeLastCard();
+                } else {
+                    io.writeln("¡ERROR! No se puede poner " + cardFoundation + " sobre " + cardPile);
+                }
             }
         }
     }

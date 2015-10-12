@@ -19,23 +19,27 @@ public class PileToFoundationController extends ControllerAbstract {
     public void control() {
         IO io = new IO();
         Pile pile = piles.get(numPile);
-        Card cardPile = pile.getLastCardFaceUp();
-        int numPile = cardPile.getSuit().position();
-        Foundation foundation = foundations.get(numPile);
-        if (foundation.isEmpty()) {
-            if (cardPile.getCardValue() == CardValue.AS) {
-                foundation.addCard(cardPile);
-                pile.removeLastCardFaceUp();
-            } else {
-                io.writeln("¡ERROR! No se puede poner " + cardPile + " sobre el palo vacio");
-            }
+        if (pile.isEmpty()) {
+            io.writeln("¡ERROR! No hay cartas en la escalera para mover");
         } else {
-            Card cardFoundation = foundation.getLastCard();
-            if (cardPile.getCardValue() == cardFoundation.getCardValue().next()) {
-                foundation.addCard(cardPile);
-                pile.removeLastCardFaceUp();
+            Card cardPile = pile.getLastCardFaceUp();
+            int numPile = cardPile.getSuit().position();
+            Foundation foundation = foundations.get(numPile);
+            if (foundation.isEmpty()) {
+                if (cardPile.getCardValue() == CardValue.AS) {
+                    foundation.addCard(cardPile);
+                    pile.removeLastCardFaceUp();
+                } else {
+                    io.writeln("¡ERROR! No se puede poner " + cardPile + " sobre el palo vacio");
+                }
             } else {
-                io.writeln("¡ERROR! No se puede poner " + cardPile + " sobre " + cardFoundation);
+                Card cardFoundation = foundation.getLastCard();
+                if (cardPile.getCardValue() == cardFoundation.getCardValue().next()) {
+                    foundation.addCard(cardPile);
+                    pile.removeLastCardFaceUp();
+                } else {
+                    io.writeln("¡ERROR! No se puede poner " + cardPile + " sobre " + cardFoundation);
+                }
             }
         }
     }

@@ -22,7 +22,7 @@ public class DeckToDiscardController extends ControllerAbstract {
             while (count < MAX_CARDS_DISCARD && !deck.isEmpty()) {
                 Card card = deck.getCards().get(0);
                 deck.getCards().remove(0);
-                discard.getCards().add(card);
+                discard.addCard(card);
                 count++;
             }
         }

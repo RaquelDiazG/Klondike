@@ -16,7 +16,7 @@ public class DiscardToFoundationController extends ControllerAbstract {
     public void control() {
         IO io = new IO();
         if (discard.isEmpty()) {
-            io.writeln("¡ERROR! No hay cartas para colocar");
+            io.writeln("¡ERROR! No hay cartas en el descarte para colocar");
         } else {
             Card cardDiscard = discard.getLastCard();
             int numFoundation = cardDiscard.getSuit().position();
@@ -34,7 +34,7 @@ public class DiscardToFoundationController extends ControllerAbstract {
                     foundation.addCard(cardDiscard);
                     discard.removeLastCard();
                 } else {
-                    io.writeln("¡ERROR! " + cardDiscard + " no se puede colocar en " + foundation);
+                    io.writeln("¡ERROR! " + cardDiscard + " no se puede colocar sobre " + foundation);
                 }
             }
         }
