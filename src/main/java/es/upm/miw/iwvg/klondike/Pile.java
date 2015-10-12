@@ -1,12 +1,13 @@
 package es.upm.miw.iwvg.klondike;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class Pile {
 
-    private ArrayList<Card> cardsFaceDown;
+    private List<Card> cardsFaceDown;
 
-    private ArrayList<Card> cardsFaceUp;
+    private List<Card> cardsFaceUp;
 
     public Pile(int position) {
         this.cardsFaceDown = new ArrayList<>();
@@ -45,8 +46,8 @@ public class Pile {
         cardsFaceDown.remove(lastIndex);
     }
 
-    public ArrayList<Card> getCards() {
-        ArrayList<Card> allCards = new ArrayList<Card>();
+    public List<Card> getCards() {
+        List<Card> allCards = new ArrayList<Card>();
         allCards.addAll(cardsFaceUp);
         allCards.addAll(cardsFaceDown);
         return allCards;
@@ -62,11 +63,11 @@ public class Pile {
         removeLastCardFaceDown();
     }
 
-    public ArrayList<Card> getCardsFaceUp() {
+    public List<Card> getCardsFaceUp() {
         return cardsFaceUp;
     }
 
-    public ArrayList<Card> getCardsFaceDown() {
+    public List<Card> getCardsFaceDown() {
         return cardsFaceDown;
     }
 

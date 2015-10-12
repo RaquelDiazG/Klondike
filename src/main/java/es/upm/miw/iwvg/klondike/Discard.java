@@ -1,5 +1,7 @@
 package es.upm.miw.iwvg.klondike;
 
+import java.util.List;
+
 public class Discard extends CardList {
 
     public Discard() {
@@ -12,10 +14,10 @@ public class Discard extends CardList {
             return "<vacío>";
         } else {
             if (super.cards.size() <= 3) {
-                return super.cards.toString();
+                return super.listToString(super.cards);
             } else {
-                return super.cards.subList(super.cards.size() - 4, super.cards.size() - 1).toString();
-
+                List<Card> sublist = super.cards.subList(super.cards.size() - 4, super.cards.size() - 1);
+                return super.listToString(sublist);
             }
         }
     }

@@ -1,11 +1,12 @@
 package es.upm.miw.iwvg.klondike;
 
 import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
 
 public class CardList {
 
-    protected ArrayList<Card> cards;
+    protected List<Card> cards;
 
     public CardList() {
         this.cards = new ArrayList<>();
@@ -41,12 +42,20 @@ public class CardList {
         cards = new ArrayList<>();
     }
 
-    public ArrayList<Card> getCards() {
+    public List<Card> getCards() {
         return cards;
     }
 
-    public void setCards(ArrayList<Card> cards) {
+    public void setCards(List<Card> cards) {
         this.cards = cards;
+    }
+
+    public String listToString(List<Card> list) {
+        String stringList = "";
+        for (Card card : list) {
+            stringList += card;
+        }
+        return stringList;
     }
 
 }
