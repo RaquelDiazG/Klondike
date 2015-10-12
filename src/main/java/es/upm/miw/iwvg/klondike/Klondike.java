@@ -27,7 +27,7 @@ public class Klondike {
 
         foundations = new HashMap<>();
         for (Suit suit : Suit.values()) {
-            foundations.put(suit.position(), new Foundation(suit));
+            foundations.put(suit.position(), new Foundation());
         }
 
         piles = new HashMap<>();

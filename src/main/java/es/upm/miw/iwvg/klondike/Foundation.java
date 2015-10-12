@@ -2,7 +2,7 @@ package es.upm.miw.iwvg.klondike;
 
 public class Foundation extends CardList {
 
-    public Foundation(Suit suit) {
+    public Foundation() {
         super();
     }
 
